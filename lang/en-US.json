@@ -525,6 +525,12 @@
     "categories.save": "Save categories",
     "categories.saveOne": "Save category",
     "catalog.startEmpty": "Your collection is empty. Create your first entry to get started.",
-    "github.mode": "Publication mode"
+    "github.mode": "Publication mode",
+    "field.profile_image": "Profile Image"
+  },
+  "display_name": "en-US",
+  "flag": {
+    "kind": "emoji",
+    "value": "🇺🇸"
   }
 }

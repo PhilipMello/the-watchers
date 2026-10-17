@@ -1,0 +1,22 @@
+{
+  "format_version": "1.1.0",
+  "id": "5ba2b8a7-6cac-44de-8fc3-6981d66e2e61",
+  "type": "country",
+  "created_at": "2026-10-17T18:06:53.397Z",
+  "updated_at": "2026-10-17T18:06:53.397Z",
+  "visibility": "public",
+  "display_field_id": "name",
+  "fields": [
+    {
+      "id": "name",
+      "label": {
+        "en-US": "Name"
+      },
+      "value_type": "text",
+      "value": "Brazilian"
+    }
+  ],
+  "source_ids": [],
+  "badge_ids": [],
+  "category_ids": []
+}
