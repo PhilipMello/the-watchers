@@ -1,0 +1,28 @@
+import {metadataUI,flagNode} from './metadata.mjs';
+import {APP_VERSION,CONTRACT,VALUE_TYPES,displayName,localized,withObject,validateSnapshot,fail,safeURL} from '../collection-snapshot/domain.mjs';
+import {WORKSPACE_VERSION,preferences,languageDraft,enableLanguage,newDefinition,sourceUsage,removeSource,upgradeCatalogs} from '../collection-snapshot/workspace.mjs';
+import {helpers} from '../objects/ui-helpers.mjs';
+export function createUI(c){
+  const {el,button,field,modal,t,run,errors,render,announce,download,ensureSnapshot,commit}=c;
+  const {textField,finish,readFile,disclosure,definitionLabel,labelFor,pickMany,listInput,valueControl,emptyValue}=helpers(c);
+  const {languageMetadata,exportLanguage,unpackLanguage}=metadataUI(c);
+  async function languages(main){
+    const s=await ensureSnapshot(),base=s.languages['en-US'],drafts=c.languageDrafts(),items=[...new Set([...Object.keys(s.languages),...Object.keys(drafts)])],list=el('div',{class:'stack'}),upload=el('input',{type:'file',accept:'.json,application/json','aria-label':t('language.import')});
+    upload.addEventListener('change',()=>run(async()=>{const input=await readFile(upload);if(!input)return;const value=await unpackLanguage(input);languageDraft(value,base);if((s.languages[value.locale]||drafts[value.locale])&&!confirm(t('language.replaceConfirm')))return;c.saveLanguageDraft(value.locale,value);await render();announce('language.saved');}));
+    const create=()=>{const m=modal('language.create'),form=el('form',{class:'stack'}),code=textField('language.code');code.input.required=true;code.input.pattern='[a-z]{2}-[A-Z]{2}';code.input.placeholder='pt-PT';form.append(code.node,el('button',{type:'submit',class:'primary'},t('language.create')));form.addEventListener('submit',e=>{e.preventDefault();run(async()=>{try{const locale=code.input.value;if(s.languages[locale]||drafts[locale])fail('duplicate','language');const catalog={format_version:CONTRACT,locale,messages:{}};languageDraft(catalog,base);c.saveLanguageDraft(locale,catalog);m.finish();await render();await translate(locale);}catch(error){errors(error,m.error);}});});m.body.append(form);};
+    for(const locale of items){const draft=drafts[locale]||s.languages[locale],check=languageDraft(draft,base);list.append(el('article',{class:'panel'},el('div',{class:'toolbar'},el('h2',{class:'row'},flagNode(c,s.languages[locale]||draft),(s.languages[locale]||draft).display_name||locale),el('span',{class:'badge'},t(s.languages[locale]?'language.enabled':'language.draft'))),el('p',{class:'muted'},t('language.progress',{done:check.total-check.missing.length,total:check.total})),el('div',{class:'row'},button('language.translate',()=>translate(locale)),button('language.appearance',()=>languageMetadata(locale)),button('language.export',()=>exportLanguage(s.languages[locale]||draft)),locale!=='en-US'&&s.languages[locale]?button('language.disable',async()=>{if(!confirm(t('language.disableConfirm')))return;const next=structuredClone(await ensureSnapshot());c.saveLanguageDraft(locale,draft);delete next.languages[locale];await commit(next);await render();}):null)));}
+    main.append(el('div',{class:'toolbar'},el('h2',{},t('language.title')),button('language.create',create,true)),el('p',{class:'muted'},t('language.help')),field('language.import',upload),list);
+  }
+  async function translate(locale){
+    const s=await ensureSnapshot(),base=s.languages['en-US'],catalog=structuredClone(c.languageDrafts()[locale]||s.languages[locale]),m=modal('language.translate'),search=el('input',{type:'search',placeholder:t('language.search'),'aria-label':t('language.search')}),pending=el('input',{type:'checkbox'}),list=el('div',{class:'translation-list'}),progress=el('p',{role:'status','aria-live':'polite'});
+    const check=()=>{const result=languageDraft(catalog,base);progress.textContent=t('language.progress',{done:result.total-result.missing.length,total:result.total})+' · '+t('language.invalid',{count:result.invalid.length});return result;};
+    const paint=()=>{const result=check();list.replaceChildren(...Object.entries(base.messages).filter(([key,value])=>(!pending.checked||result.missing.includes(key)||result.invalid.includes(key))&&(key+' '+value+' '+(catalog.messages[key]||'')).toLocaleLowerCase().includes(search.value.toLocaleLowerCase())).map(([key,value])=>{
+      const input=el('textarea',{rows:'2','aria-label':key,value:undefined});input.value=catalog.messages[key]||'';
+      const tokens=el('small',{class:'muted'},t('language.variables',{variables:[...value.matchAll(/\{([a-zA-Z_]+)\}/g)].map(x=>x[0]).join(', ')||t('language.noVariables')}));
+      input.addEventListener('input',()=>{catalog.messages[key]=input.value;m.markDirty();check();});return el('label',{class:'translation-row'},el('span',{},el('code',{},key),el('span',{class:'translation-original'},value),tokens),input);
+    }));};
+    m.body.append(el('p',{},locale),el('p',{class:'muted'},t('language.translationHelp')),el('div',{class:'row'},search,el('label',{class:'check-row'},pending,t('language.pending'))),progress,list,el('div',{class:'row'},button('language.saveDraft',()=>{const saved=c.saveLanguageDraft(locale,catalog);if(saved!==false)m.markClean();progress.textContent=t(saved===false?'workspace.storageFailed':'language.saved');}),button('language.enable',async()=>{try{const next=enableLanguage(await ensureSnapshot(),catalog);await commit(next);c.saveLanguageDraft(locale,catalog);await finish(m,'language.activated');}catch(error){errors(error,m.error);}},true),button('language.export',()=>exportLanguage(catalog))));search.addEventListener('input',paint);pending.addEventListener('change',paint);paint();
+  }
+
+return {languages,translate,languageMetadata};
+}

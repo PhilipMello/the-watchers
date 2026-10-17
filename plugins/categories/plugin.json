@@ -1,0 +1,19 @@
+{
+  "manifest_version": "1.0.0",
+  "id": "watchers.categories",
+  "type": "plugin",
+  "name": "Categories",
+  "description": "Reusable categories, entry tags and catalog filters.",
+  "version": "0.0.0",
+  "core": ">=0.0.0 <0.1.0",
+  "api": ">=1.0.0 <2.0.0",
+  "entry": "index.mjs",
+  "dependencies": {
+    "watchers.objects": ">=0.0.0 <0.1.0",
+    "watchers.settings": ">=0.0.0 <0.1.0"
+  },
+  "permissions": [
+    "registry.write",
+    "storage.local"
+  ]
+}

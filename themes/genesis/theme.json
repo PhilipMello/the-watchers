@@ -1,0 +1,10 @@
+{
+  "format_version": "1.0.0",
+  "id": "genesis",
+  "version": "0.0.0",
+  "ui_contract": "1.0.0",
+  "styles": [
+    "tokens.css",
+    "components.css"
+  ]
+}

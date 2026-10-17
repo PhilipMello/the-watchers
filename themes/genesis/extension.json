@@ -1,0 +1,17 @@
+{
+  "manifest_version": "1.0.0",
+  "id": "watchers.theme-genesis",
+  "type": "theme",
+  "name": "Genesis",
+  "description": "Original frosted light-gray collection theme.",
+  "version": "0.0.0",
+  "core": ">=0.0.0 <0.1.0",
+  "api": ">=1.0.0 <2.0.0",
+  "permissions": [],
+  "dependencies": {},
+  "styles": [
+    "tokens.css",
+    "components.css"
+  ],
+  "update_url": ""
+}

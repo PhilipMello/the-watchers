@@ -1,0 +1,92 @@
+{
+  "format_version": "1.0.0",
+  "fields": [
+    {
+      "id": "name",
+      "version": "1.0.0",
+      "label_key": "field.name",
+      "value_type": "text",
+      "rules": {}
+    },
+    {
+      "id": "middle_name",
+      "version": "1.0.0",
+      "label_key": "field.middle_name",
+      "value_type": "text",
+      "rules": {}
+    },
+    {
+      "id": "last_name",
+      "version": "1.0.0",
+      "label_key": "field.last_name",
+      "value_type": "text",
+      "rules": {}
+    },
+    {
+      "id": "full_name",
+      "version": "1.0.0",
+      "label_key": "field.full_name",
+      "value_type": "text",
+      "rules": {}
+    },
+    {
+      "id": "age",
+      "version": "1.0.0",
+      "label_key": "field.age",
+      "value_type": "integer",
+      "rules": {
+        "min": 0
+      }
+    },
+    {
+      "id": "birth_date",
+      "version": "1.0.0",
+      "label_key": "field.birth_date",
+      "value_type": "date",
+      "rules": {}
+    },
+    {
+      "id": "nationality",
+      "version": "1.0.0",
+      "label_key": "field.nationality",
+      "value_type": "reference-list",
+      "rules": {
+        "target_types": [
+          "country"
+        ]
+      }
+    },
+    {
+      "id": "current_country",
+      "version": "1.0.0",
+      "label_key": "field.current_country",
+      "value_type": "reference",
+      "rules": {
+        "target_types": [
+          "country"
+        ]
+      }
+    },
+    {
+      "id": "summary",
+      "version": "1.0.0",
+      "label_key": "field.summary",
+      "value_type": "text",
+      "rules": {}
+    },
+    {
+      "id": "colors",
+      "version": "1.0.0",
+      "label_key": "field.colors",
+      "value_type": "text-list",
+      "rules": {}
+    },
+    {
+      "id": "clothes",
+      "version": "1.0.0",
+      "label_key": "field.clothes",
+      "value_type": "text-list",
+      "rules": {}
+    }
+  ]
+}

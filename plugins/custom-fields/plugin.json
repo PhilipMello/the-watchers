@@ -1,0 +1,19 @@
+{
+  "manifest_version": "1.0.0",
+  "id": "watchers.custom-fields",
+  "type": "plugin",
+  "name": "Custom Fields",
+  "description": "Entry editor, reusable fields and bounded regex validation.",
+  "version": "0.0.0",
+  "core": ">=0.0.0 <0.1.0",
+  "api": ">=1.0.0 <2.0.0",
+  "entry": "index.mjs",
+  "permissions": [
+    "registry.write",
+    "storage.local"
+  ],
+  "dependencies": {
+    "watchers.objects": ">=0.0.0 <0.1.0"
+  },
+  "update_url": ""
+}

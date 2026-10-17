@@ -1,0 +1,41 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {readFile,mkdtemp,rm,cp,access} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join,resolve} from 'node:path';
+import {readSource,readJSON,writeJSON,files,root} from '../scripts/io.mjs';
+import {Repository} from '../assets/js/repository.mjs';
+const node=(args,cwd=root)=>execFileSync(process.execPath,args,{cwd,stdio:'pipe'});
+node(['scripts/build.mjs']);
+test('all JavaScript modules parse',async()=>{for(const file of await files(resolve(root,'assets/js')))node(['--check',file]);});
+test('initial repository load does not fetch full objects',async()=>{const requested=[];const fetcher=async path=>{requested.push(path);return new Response(await readFile(resolve(root,'dist',path)));};const r=await new Repository(fetcher).open();assert(!requested.some(p=>p.startsWith('objects/')));const o=await r.object(r.index.objects[0].id);assert.equal(requested.filter(p=>p.startsWith('objects/')).length,1);await r.object(o.id);assert.equal(requested.filter(p=>p.startsWith('objects/')).length,1);assert.equal((await r.snapshot()).objects.length,8);});
+test('altered object bytes fail integrity before use',async()=>{const r=await new Repository(async path=>new Response((await readFile(resolve(root,'dist',path),'utf8'))+(path.startsWith('objects/')?' ':''))).open();await assert.rejects(()=>r.object(r.index.objects[0].id),e=>e.issues[0].code==='integrity');});
+test('indexes have exactly one canonical file per object',async()=>{const index=await readJSON(root+'dist/data/index.json');const paths=await files(root+'dist/objects');assert.equal(paths.length,index.objects.length);assert.equal(new Set(index.objects.map(x=>x.id)).size,index.objects.length);for(const row of index.objects)await access(root+'dist/'+row.path);});
+test('build is reproducible for unchanged source',async()=>{const before=await readFile(root+'dist/data/manifest.json','utf8');node(['scripts/build.mjs']);assert.equal(await readFile(root+'dist/data/manifest.json','utf8'),before);});
+test('literal UI message keys exist in the English catalog',async()=>{const source=(await Promise.all(['app.mjs','workspace-ui.mjs'].map(file=>readFile(root+'assets/js/'+file,'utf8')))).join('\n'),lang=await readJSON(root+'lang/en-US.json');for(const match of source.matchAll(/(?:t|button|field|modal|announce)\('([a-zA-Z]+\.[a-zA-Z]+)'/g))assert.equal(typeof lang.messages[match[1]],'string',match[1]);assert(!source.includes('innerHTML'));});
+test('import creates validated project and refuses overwrite',async()=>{const dir=await mkdtemp(join(tmpdir(),'watchers-import-'));try{const input=join(dir,'snapshot.json'),output=join(dir,'next');await writeJSON(input,await readSource());node(['scripts/import.mjs',input,output]);assert.equal((await readSource(output)).objects.length,8);assert.throws(()=>node(['scripts/import.mjs',input,output]));node(['scripts/build.mjs'],output);}finally{await rm(dir,{recursive:true,force:true});}});
+test('invalid import creates no final project and does not modify source',async()=>{const dir=await mkdtemp(join(tmpdir(),'watchers-invalid-'));try{const s=await readSource(),before=JSON.stringify(s);s.objects[0].type='missing';const input=join(dir,'bad.json'),output=join(dir,'next');await writeJSON(input,s);assert.throws(()=>node(['scripts/import.mjs',input,output]));await assert.rejects(()=>access(output));assert.equal(JSON.stringify(await readSource()),before);}finally{await rm(dir,{recursive:true,force:true});}});
+test('unsupported theme and app contracts fail build',async()=>{const dir=await mkdtemp(join(tmpdir(),'watchers-contracts-'));try{await cp(root,join(dir,'project'),{recursive:true});const project=join(dir,'project'),theme=await readJSON(join(project,'themes/genesis/theme.json'));theme.ui_contract='2.0.0';await writeJSON(join(project,'themes/genesis/theme.json'),theme);assert.throws(()=>node(['scripts/build.mjs'],project));theme.ui_contract='1.0.0';await writeJSON(join(project,'themes/genesis/theme.json'),theme);const app=await readJSON(join(project,'config/app.json'));app.contracts.object='2.0.0';await writeJSON(join(project,'config/app.json'),app);assert.throws(()=>node(['scripts/build.mjs'],project));}finally{await rm(dir,{recursive:true,force:true});}});
+test('formatted source builds publish without false conflicts and retain real remote conflict protection',async()=>{
+ const {gitHash,publication,diffFiles}=await import('../plugins/collection-snapshot/publication.mjs');
+ const {GitHub}=await import('../plugins/github/client.mjs');
+ const {objectPath}=await import('../plugins/collection-snapshot/domain.mjs');
+ const {writeFile}=await import('node:fs/promises');
+ const dir=await mkdtemp(join(tmpdir(),'watchers-baseline-'));
+ try{
+  const project=join(dir,'project');await cp(root,project,{recursive:true});const s=await readSource(project),person=s.objects.find(o=>o.type==='person'),path=objectPath(person);
+  const source=JSON.stringify(person,null,4).replaceAll('\n','\r\n')+'\r\n';await writeFile(join(project,path),source);
+  node(['scripts/build.mjs'],project);
+  const baseline=await readJSON(join(project,'dist/data/source-hashes.json')),publishedBytes=await readFile(join(project,'dist',path));
+  assert.equal(baseline[path].sha,await gitHash(new TextEncoder().encode(source)));
+  assert.equal(baseline[path].published_sha,await gitHash(publishedBytes));assert.notEqual(baseline[path].sha,baseline[path].published_sha);
+  const app=await readJSON(join(project,'config/app.json')),clean=await publication(s,app);assert.deepEqual(diffFiles(baseline,clean.files),[]);
+  person.fields[0].value='Name edited in UI';const next=await publication(s,app);assert.deepEqual(diffFiles(baseline,next.files).map(x=>x.path),[path]);
+  let remote=baseline[path].sha;const calls=[];
+  const client=new GitHub({token:'test',owner:'owner',repo:'repo',fetcher:async(url,opts)=>{calls.push(opts.method);return new Response(JSON.stringify(url.includes('/git/ref/')?{object:{sha:'head'}}:url.includes('/git/commits/')?{tree:{sha:'tree'}}:{tree:Object.entries(baseline).map(([p,v])=>({path:p,type:'blob',sha:p===path?remote:v.sha||v})),truncated:false}));}});
+  assert.equal((await client.prepare('main',baseline,next.files)).changes.length,1);
+  remote=next.files[path].sha;assert.deepEqual((await client.prepare('main',baseline,next.files)).changes,[]);
+  remote='real-remote-edit';await assert.rejects(()=>client.prepare('main',baseline,next.files),/Remote changes conflict/);assert(calls.every(method=>method==='GET'));
+ }finally{await rm(dir,{recursive:true,force:true});}
+});
