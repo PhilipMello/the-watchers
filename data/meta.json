@@ -1,7 +1,69 @@
 {
-  "format_version": "1.0.0",
+  "format_version": "1.1.0",
   "dataset_mode": "public",
   "relationships": [],
   "sources": [],
-  "notes": []
+  "notes": [],
+  "extensions": {
+    "format_version": "1.0.0",
+    "categories": [
+      {
+        "id": "0ba49b40-0029-4b25-b3ba-6c9fbd78ab04",
+        "name": "Developer",
+        "description": "",
+        "visibility": "public"
+      },
+      {
+        "id": "4d5fe541-fcda-4d02-b4c4-768838c3ccde",
+        "name": "DevOps",
+        "description": "",
+        "visibility": "public"
+      }
+    ],
+    "badges": [
+      {
+        "id": "9f61d537-4a2d-41b8-a3dd-912d75edd108",
+        "name": "Libertarian",
+        "kind": "emoji",
+        "value": "🗽",
+        "type_ids": [],
+        "visibility": "public",
+        "appearance": {
+          "icon_size": 30,
+          "border_color": "#009e1a"
+        },
+        "color": "#b0e156"
+      },
+      {
+        "id": "3044081f-67e9-4014-a366-d8555782cf7b",
+        "name": "Socialist",
+        "kind": "emoji",
+        "value": "⚒",
+        "type_ids": [],
+        "visibility": "public",
+        "color": "#ff1100",
+        "appearance": {
+          "border_color": "#d3c422",
+          "icon_size": 35
+        }
+      },
+      {
+        "id": "a6e7a289-9340-464f-8c94-fd7fccab3a33",
+        "name": "Communist",
+        "kind": "emoji",
+        "value": "★",
+        "type_ids": [],
+        "visibility": "public",
+        "color": "#ff0000",
+        "appearance": {
+          "border_color": "#99ff00"
+        }
+      }
+    ],
+    "settings": {
+      "watchers.objects": {
+        "cardDesign": "classic"
+      }
+    }
+  }
 }

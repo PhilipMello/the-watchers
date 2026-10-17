@@ -87,6 +87,13 @@
       "label_key": "field.clothes",
       "value_type": "text-list",
       "rules": {}
+    },
+    {
+      "id": "field_0d45542e752d4e1c93b48a1c49cff969",
+      "version": "1.1.0",
+      "label_key": "field.profile_image",
+      "value_type": "image",
+      "rules": {}
     }
   ]
 }

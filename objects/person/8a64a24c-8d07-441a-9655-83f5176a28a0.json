@@ -1,0 +1,79 @@
+{
+  "format_version": "1.1.0",
+  "id": "8a64a24c-8d07-441a-9655-83f5176a28a0",
+  "type": "person",
+  "created_at": "2026-10-17T17:59:57.916Z",
+  "updated_at": "2026-10-17T18:24:21.304Z",
+  "fields": [
+    {
+      "id": "6a357cfb-44d4-4594-8917-fe36d259691d",
+      "definition_id": "name",
+      "label": {
+        "en-US": "Name"
+      },
+      "value_type": "text",
+      "value": "Philip"
+    },
+    {
+      "id": "8753ff6c-5dc8-4674-b078-2251e5236975",
+      "definition_id": "summary",
+      "label": {
+        "en-US": "Summary"
+      },
+      "value_type": "text",
+      "value": ""
+    },
+    {
+      "id": "b42cb4ce-bd60-44be-ae5b-49021cb0cdbd",
+      "value": {
+        "src": "https://avatars.githubusercontent.com/u/110171839?s=400&u=9f0860404c81af7bfc519e015b70fceb72a89079&v=4",
+        "alt": ""
+      },
+      "label": {
+        "en-US": "Profile Image"
+      },
+      "value_type": "image",
+      "definition_id": "field_0d45542e752d4e1c93b48a1c49cff969"
+    },
+    {
+      "id": "66e85af3-41c2-4afd-9203-0d0a7d097847",
+      "definition_id": "last_name",
+      "label": {
+        "en-US": "Last Name"
+      },
+      "value_type": "text",
+      "value": "Mello"
+    },
+    {
+      "id": "f858bb05-2e71-4330-9173-5507220808a5",
+      "definition_id": "birth_date",
+      "label": {
+        "en-US": "Birth Date"
+      },
+      "value_type": "date",
+      "value": "1988-11-12"
+    },
+    {
+      "id": "197d2caf-b38e-4700-a03d-1dd2a688bc0c",
+      "definition_id": "nationality",
+      "label": {
+        "en-US": "Nationality"
+      },
+      "value_type": "reference-list",
+      "value": [
+        "1aa5af2b-9759-4bc1-a26a-71addbe38cef"
+      ]
+    }
+  ],
+  "source_ids": [],
+  "badge_ids": [
+    "9f61d537-4a2d-41b8-a3dd-912d75edd108"
+  ],
+  "category_ids": [
+    "0ba49b40-0029-4b25-b3ba-6c9fbd78ab04",
+    "4d5fe541-fcda-4d02-b4c4-768838c3ccde"
+  ],
+  "visibility": "public",
+  "display_field_id": "6a357cfb-44d4-4594-8917-fe36d259691d",
+  "cover_field_id": "b42cb4ce-bd60-44be-ae5b-49021cb0cdbd"
+}
