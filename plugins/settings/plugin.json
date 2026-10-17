@@ -1,0 +1,18 @@
+{
+  "manifest_version": "1.0.0",
+  "id": "watchers.settings",
+  "type": "plugin",
+  "name": "Collection Settings",
+  "description": "Collection settings, snapshots and local draft recovery.",
+  "version": "0.0.0",
+  "core": ">=0.0.0 <0.1.0",
+  "api": ">=1.0.0 <2.0.0",
+  "entry": "index.mjs",
+  "permissions": [
+    "registry.write"
+  ],
+  "dependencies": {
+    "watchers.workspace": ">=0.0.0 <0.1.0"
+  },
+  "update_url": ""
+}

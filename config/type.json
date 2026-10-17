@@ -1,0 +1,115 @@
+{
+  "format_version": "1.0.0",
+  "types": [
+    {
+      "id": "person",
+      "version": "1.0.0",
+      "label_key": "type.person",
+      "icon": "person",
+      "enabled": true,
+      "template": "standard",
+      "suggested_fields": [
+        "name",
+        "summary"
+      ]
+    },
+    {
+      "id": "company",
+      "version": "1.0.0",
+      "label_key": "type.company",
+      "icon": "company",
+      "enabled": true,
+      "template": "standard",
+      "suggested_fields": [
+        "name",
+        "summary"
+      ]
+    },
+    {
+      "id": "country",
+      "version": "1.0.0",
+      "label_key": "type.country",
+      "icon": "country",
+      "enabled": true,
+      "template": "standard",
+      "suggested_fields": [
+        "name",
+        "summary"
+      ]
+    },
+    {
+      "id": "group",
+      "version": "1.0.0",
+      "label_key": "type.group",
+      "icon": "group",
+      "enabled": true,
+      "template": "standard",
+      "suggested_fields": [
+        "name",
+        "summary"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "founded",
+      "label_key": "relation.founded",
+      "from_types": [
+        "person"
+      ],
+      "to_types": [
+        "company",
+        "group"
+      ],
+      "allow_self": false
+    },
+    {
+      "id": "member_of",
+      "label_key": "relation.member_of",
+      "from_types": [
+        "person",
+        "company",
+        "group",
+        "country"
+      ],
+      "to_types": [
+        "group"
+      ],
+      "allow_self": false
+    },
+    {
+      "id": "works_for",
+      "label_key": "relation.works_for",
+      "from_types": [
+        "person"
+      ],
+      "to_types": [
+        "company"
+      ],
+      "allow_self": false
+    },
+    {
+      "id": "subsidiary_of",
+      "label_key": "relation.subsidiary_of",
+      "from_types": [
+        "company"
+      ],
+      "to_types": [
+        "company"
+      ],
+      "allow_self": false
+    },
+    {
+      "id": "based_in",
+      "label_key": "relation.based_in",
+      "from_types": [
+        "company",
+        "group"
+      ],
+      "to_types": [
+        "country"
+      ],
+      "allow_self": false
+    }
+  ]
+}

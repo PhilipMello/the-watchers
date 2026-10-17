@@ -1,0 +1,3 @@
+:root{--bg:#f3f5f3;--surface:#fff;--glass:#ffffffbb;--ink:#203c35;--muted:#56685f;--line:#d5ded7;--accent:#cce5a5;--accent-ink:#213c29;--focus:#326a47;--danger:#9d2626;--radius:20px;--space:clamp(16px,4vw,64px);--shadow:0 12px 38px #263c2e09}
+
+:root{--bg:#fff;--surface:#fff;--ink:#111827;--accent:#2445a4;}body{background:#fafbfc} .card-art{background:#e9eef8}.panel{background:#fff;backdrop-filter:none}

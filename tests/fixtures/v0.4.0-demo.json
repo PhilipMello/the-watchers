@@ -1,0 +1,1943 @@
+{
+  "format_version": "1.0.0",
+  "dataset_mode": "demo",
+  "relationships": [
+    {
+      "id": "36ff1ee4-070d-5c9b-a483-22ba51ffd6e1",
+      "from_id": "7866625c-68c8-519f-b6ed-2a7723484e13",
+      "relation_type": "founded",
+      "to_id": "6e60d03f-8b0a-51c5-811c-1590b73e3ebb",
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "note": "Relação fictícia de demonstração."
+    },
+    {
+      "id": "3fff7b6b-5c5c-53d4-a99c-3985f5ce9820",
+      "from_id": "7052a93a-1e1d-5228-bc18-4b3bdfec756b",
+      "relation_type": "works_for",
+      "to_id": "6e60d03f-8b0a-51c5-811c-1590b73e3ebb",
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "note": "Relação fictícia de demonstração."
+    },
+    {
+      "id": "3850d2ec-f82b-526c-85f6-808f0394dec0",
+      "from_id": "7866625c-68c8-519f-b6ed-2a7723484e13",
+      "relation_type": "member_of",
+      "to_id": "5e7eae50-9ac1-58d5-a17e-f9743ec36269",
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "note": "Relação fictícia de demonstração."
+    },
+    {
+      "id": "4d80e342-aa9a-50ce-9f0a-29fcd79d4b05",
+      "from_id": "7052a93a-1e1d-5228-bc18-4b3bdfec756b",
+      "relation_type": "member_of",
+      "to_id": "5e7eae50-9ac1-58d5-a17e-f9743ec36269",
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "note": "Relação fictícia de demonstração."
+    },
+    {
+      "id": "96a3625a-8068-5e3e-a429-661b574bc24a",
+      "from_id": "6e60d03f-8b0a-51c5-811c-1590b73e3ebb",
+      "relation_type": "member_of",
+      "to_id": "61f858b0-0440-5ca5-9202-f3cbbe26e025",
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "note": "Relação fictícia de demonstração."
+    },
+    {
+      "id": "f75986c1-5df1-5aaa-ad22-1cd49e46b4b9",
+      "from_id": "d4535b5d-b599-54de-9a3b-198dbf8dab8d",
+      "relation_type": "member_of",
+      "to_id": "61f858b0-0440-5ca5-9202-f3cbbe26e025",
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "note": "Relação fictícia de demonstração."
+    },
+    {
+      "id": "77bfed56-cda2-50ca-946f-dfaf869239eb",
+      "from_id": "6e60d03f-8b0a-51c5-811c-1590b73e3ebb",
+      "relation_type": "based_in",
+      "to_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "note": "Relação fictícia de demonstração."
+    },
+    {
+      "id": "0bf3fcc6-7a85-5e68-bfff-0bdfabdb8403",
+      "from_id": "5e7eae50-9ac1-58d5-a17e-f9743ec36269",
+      "relation_type": "based_in",
+      "to_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "note": "Relação fictícia de demonstração."
+    }
+  ],
+  "sources": [
+    {
+      "id": "24c0cbcc-8e4a-5edc-9ab8-50952bce9513",
+      "title": "Caderno de demonstração Genesis",
+      "publisher": "The Watchers",
+      "description": "Material sintético. Não constitui evidência sobre pessoas, empresas ou países reais."
+    }
+  ],
+  "notes": [
+    {
+      "id": "49a25987-5f6f-5653-86c1-bcb8efc3bd9e",
+      "entity_id": "7866625c-68c8-519f-b6ed-2a7723484e13",
+      "title": "Sobre este registro",
+      "content": "Este perfil demonstra como reunir informações, fontes e conexões em uma entidade. Todos os dados deste exemplo são fictícios.",
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "observed_at": "2026-10-13",
+      "created_at": "2026-10-13T09:00:00Z"
+    }
+  ],
+  "legacy": {
+    "manifest": {
+      "manifest_version": "0.0.0",
+      "schema_version": "0.0.0",
+      "vocabulary_version": "0.0.0",
+      "dataset_revision": "sha256-5309a282c3b2514c3fd3b21a",
+      "dataset_mode": "demo",
+      "files": {
+        "persons": {
+          "path": "data/persons.json",
+          "sha256": "f0e803573469bf62de58129da3881a036a387d21cc8ca74147ccb06a1db3c57e"
+        },
+        "companies": {
+          "path": "data/companies.json",
+          "sha256": "742f3266b9ef6da22a3371c0ff4472d9055ed6a4353896a7752bfffff37196ae"
+        },
+        "countries": {
+          "path": "data/countries.json",
+          "sha256": "87ad76638c4daff820026b6f33a57879adacc0307a2b997f257a743ab95e35d5"
+        },
+        "groups": {
+          "path": "data/groups.json",
+          "sha256": "85ec4a6658602e47678d991ca29d27fbd00ae7f5020821746728060706ee7dac"
+        },
+        "relationships": {
+          "path": "data/relationships.json",
+          "sha256": "1a3a6aa291e650f6dd553f847590ae17c2e64d38fcbe2b86029ab2bc7e3370a3"
+        },
+        "sources": {
+          "path": "data/sources.json",
+          "sha256": "51b4569fd272d2ddb00bde7e053cb6200937a5b5ad649fb55b35b57443578cbf"
+        },
+        "notes": {
+          "path": "data/notes.json",
+          "sha256": "83d0f24c6bc6af243769b77ad6aa4396cf4065d38911f04dddb44e60b5e5539b"
+        },
+        "schema": {
+          "path": "schemas/dataset.schema.json",
+          "sha256": "a56cd94e3f73c04303308559f529140eecdf471bff6b8f1a781e7537fc228596"
+        },
+        "vocabulary": {
+          "path": "data/vocabulary.json",
+          "sha256": "31e979a452de023a61325d35287a4e90165ede105c322df811a837dc9012742a"
+        }
+      }
+    },
+    "vocabulary": {
+      "vocabulary_version": "0.0.0",
+      "entity_types": [
+        "person",
+        "company",
+        "country",
+        "group"
+      ],
+      "group_subtypes": [
+        "association",
+        "movement",
+        "alliance",
+        "informal_group",
+        "corporate_group"
+      ],
+      "relationships": {
+        "founded": {
+          "label": "fundou",
+          "from_types": [
+            "person"
+          ],
+          "to_types": [
+            "company",
+            "group"
+          ]
+        },
+        "member_of": {
+          "label": "é membro de",
+          "from_types": [
+            "person",
+            "company",
+            "group",
+            "country"
+          ],
+          "to_types": [
+            "group"
+          ]
+        },
+        "works_for": {
+          "label": "trabalha em",
+          "from_types": [
+            "person"
+          ],
+          "to_types": [
+            "company"
+          ]
+        },
+        "subsidiary_of": {
+          "label": "é subsidiária de",
+          "from_types": [
+            "company"
+          ],
+          "to_types": [
+            "company"
+          ]
+        },
+        "based_in": {
+          "label": "tem base em",
+          "from_types": [
+            "company",
+            "group"
+          ],
+          "to_types": [
+            "country"
+          ]
+        }
+      }
+    }
+  },
+  "types": {
+    "format_version": "1.0.0",
+    "types": [
+      {
+        "id": "person",
+        "version": "1.0.0",
+        "label_key": "type.person",
+        "icon": "person",
+        "enabled": true,
+        "template": "standard",
+        "suggested_fields": [
+          "name",
+          "summary"
+        ]
+      },
+      {
+        "id": "company",
+        "version": "1.0.0",
+        "label_key": "type.company",
+        "icon": "company",
+        "enabled": true,
+        "template": "standard",
+        "suggested_fields": [
+          "name",
+          "summary"
+        ]
+      },
+      {
+        "id": "country",
+        "version": "1.0.0",
+        "label_key": "type.country",
+        "icon": "country",
+        "enabled": true,
+        "template": "standard",
+        "suggested_fields": [
+          "name",
+          "summary"
+        ]
+      },
+      {
+        "id": "group",
+        "version": "1.0.0",
+        "label_key": "type.group",
+        "icon": "group",
+        "enabled": true,
+        "template": "standard",
+        "suggested_fields": [
+          "name",
+          "summary"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "id": "founded",
+        "label_key": "relation.founded",
+        "from_types": [
+          "person"
+        ],
+        "to_types": [
+          "company",
+          "group"
+        ],
+        "allow_self": false
+      },
+      {
+        "id": "member_of",
+        "label_key": "relation.member_of",
+        "from_types": [
+          "person",
+          "company",
+          "group",
+          "country"
+        ],
+        "to_types": [
+          "group"
+        ],
+        "allow_self": false
+      },
+      {
+        "id": "works_for",
+        "label_key": "relation.works_for",
+        "from_types": [
+          "person"
+        ],
+        "to_types": [
+          "company"
+        ],
+        "allow_self": false
+      },
+      {
+        "id": "subsidiary_of",
+        "label_key": "relation.subsidiary_of",
+        "from_types": [
+          "company"
+        ],
+        "to_types": [
+          "company"
+        ],
+        "allow_self": false
+      },
+      {
+        "id": "based_in",
+        "label_key": "relation.based_in",
+        "from_types": [
+          "company",
+          "group"
+        ],
+        "to_types": [
+          "country"
+        ],
+        "allow_self": false
+      }
+    ]
+  },
+  "definitions": {
+    "format_version": "1.0.0",
+    "fields": [
+      {
+        "id": "name",
+        "version": "1.0.0",
+        "label_key": "field.name",
+        "value_type": "text",
+        "rules": {}
+      },
+      {
+        "id": "middle_name",
+        "version": "1.0.0",
+        "label_key": "field.middle_name",
+        "value_type": "text",
+        "rules": {}
+      },
+      {
+        "id": "last_name",
+        "version": "1.0.0",
+        "label_key": "field.last_name",
+        "value_type": "text",
+        "rules": {}
+      },
+      {
+        "id": "full_name",
+        "version": "1.0.0",
+        "label_key": "field.full_name",
+        "value_type": "text",
+        "rules": {}
+      },
+      {
+        "id": "age",
+        "version": "1.0.0",
+        "label_key": "field.age",
+        "value_type": "integer",
+        "rules": {
+          "min": 0
+        }
+      },
+      {
+        "id": "birth_date",
+        "version": "1.0.0",
+        "label_key": "field.birth_date",
+        "value_type": "date",
+        "rules": {}
+      },
+      {
+        "id": "nationality",
+        "version": "1.0.0",
+        "label_key": "field.nationality",
+        "value_type": "reference-list",
+        "rules": {
+          "target_types": [
+            "country"
+          ]
+        }
+      },
+      {
+        "id": "current_country",
+        "version": "1.0.0",
+        "label_key": "field.current_country",
+        "value_type": "reference",
+        "rules": {
+          "target_types": [
+            "country"
+          ]
+        }
+      },
+      {
+        "id": "summary",
+        "version": "1.0.0",
+        "label_key": "field.summary",
+        "value_type": "text",
+        "rules": {}
+      },
+      {
+        "id": "colors",
+        "version": "1.0.0",
+        "label_key": "field.colors",
+        "value_type": "text-list",
+        "rules": {}
+      },
+      {
+        "id": "clothes",
+        "version": "1.0.0",
+        "label_key": "field.clothes",
+        "value_type": "text-list",
+        "rules": {}
+      }
+    ]
+  },
+  "languages": {
+    "en-US": {
+      "format_version": "1.0.0",
+      "locale": "en-US",
+      "messages": {
+        "app.title": "The Watchers",
+        "app.release": "v0.4.0 · Fields, Media & Privacy",
+        "app.tagline": "A place for connected knowledge.",
+        "app.intro": "People, organizations and whatever comes next. Explore entries, follow connections and build your collection.",
+        "nav.catalog": "Collection",
+        "nav.workspace": "Workspace",
+        "nav.sources": "Sources",
+        "nav.relationships": "Connections",
+        "nav.home": "Back to collection",
+        "nav.skip": "Skip to content",
+        "catalog.eyebrow": "THE OPEN COLLECTION",
+        "catalog.search": "Search the collection",
+        "catalog.placeholder": "Find a name, a detail, a connection…",
+        "catalog.all": "All types",
+        "catalog.empty": "No entries match your search.",
+        "catalog.count": "{count} entries",
+        "catalog.fieldCount": "{count} fields",
+        "catalog.open": "Open entry",
+        "catalog.types": "Explore by type",
+        "action.new": "New Entry",
+        "action.edit": "Edit Entry",
+        "action.save": "Save Entry",
+        "action.cancel": "Cancel",
+        "action.add": "Add field",
+        "action.remove": "Remove field",
+        "action.export": "Export snapshot",
+        "action.import": "Import snapshot",
+        "action.download": "Download entry",
+        "action.newType": "New type",
+        "action.apply": "Apply changes",
+        "action.back": "Back",
+        "action.advanced": "Advanced JSON editor",
+        "workspace.title": "Your workspace",
+        "workspace.intro": "Keep the things you use close at hand. Choose your panels, create entries and make this space your own.",
+        "workspace.draft": "Unpublished changes",
+        "workspace.clean": "Published dataset",
+        "workspace.warning": "Public exports include permitted collection data and referenced images. Private data is excluded; use an encrypted vault backup to preserve it.",
+        "workspace.importConfirm": "Replace your current working collection with this file? Export a backup first.",
+        "workspace.config": "Edit type registry JSON",
+        "workspace.data": "Edit connections, sources and notes JSON",
+        "workspace.imported": "Snapshot validated and imported.",
+        "workspace.saved": "Changes saved on this device.",
+        "workspace.exported": "Snapshot downloaded. Follow the README to publish it.",
+        "workspace.typeCreated": "Type created. It is now available in the entry editor.",
+        "workspace.format": "Supports v1.0 snapshots and v1.1 collections in a complete public package. Upload files travel with the package.",
+        "editor.title": "New Entry",
+        "editor.type": "Type",
+        "editor.fields": "Custom fields",
+        "editor.label": "Field label",
+        "editor.valueType": "Value type",
+        "editor.value": "Value",
+        "editor.display": "Display name field",
+        "editor.none": "Use type and short ID",
+        "editor.suggestion": "Suggested fields",
+        "editor.custom": "Custom field",
+        "editor.options": "Available choices",
+        "editor.observed": "Observed on (optional)",
+        "editor.listHint": "Use a JSON array, for example [\"blue\", \"green\"].",
+        "editor.referenceHint": "Use object UUIDs. Lists use a JSON array.",
+        "editor.noFields": "Add a field to start. Choose from your existing fields or create a custom field.",
+        "editor.typeId": "Type ID",
+        "editor.typeLabel": "Type label",
+        "editor.typeIdHint": "Lowercase letters, numbers, underscores or hyphens. Start with a letter.",
+        "editor.metadataHelp": "Edit the full object JSON, including field rules and source IDs. UUID and creation timestamp cannot be changed here.",
+        "editor.registryHelp": "Disable a type with enabled: false. In-use types cannot be removed. Add label keys to the language catalog before using them.",
+        "editor.relatedHelp": "The three arrays are validated together, including references. Use object UUIDs for endpoints.",
+        "editor.duplicateField": "This suggested field has already been added.",
+        "detail.fields": "Information",
+        "detail.notes": "Notes",
+        "detail.connections": "Connections",
+        "detail.sources": "Sources",
+        "detail.empty": "No information added yet.",
+        "detail.id": "Entry ID",
+        "detail.updated": "Updated",
+        "detail.observed": "Observed {date}",
+        "detail.legacy": "Original record preserved in the export",
+        "detail.relation": "{from} → {relation} → {to}",
+        "status.loading": "Loading the collection…",
+        "status.failure": "The collection could not be loaded. Check the deployment files and try again.",
+        "status.noscript": "Enable JavaScript to explore this collection.",
+        "status.demo": "Fictional demonstration data",
+        "status.public": "Public collection",
+        "status.error": "Please review the following issues.",
+        "status.ready": "Ready",
+        "boolean.true": "Yes",
+        "boolean.false": "No",
+        "error.invalid": "Invalid structure or format at {path}.",
+        "error.unsupported": "Unsupported capability at {path}.",
+        "error.version": "Unsupported version at {path}. Expected {expected}.",
+        "error.label": "An en-US label is required at {path}.",
+        "error.reference": "Missing or incompatible reference at {path}.",
+        "error.duplicate": "Duplicate or invalid ID at {path}.",
+        "error.value": "Expected a valid {type} value at {path}.",
+        "error.range": "Value or date interval is out of range at {path}.",
+        "error.disabled": "This type is disabled for new entries.",
+        "error.network": "Request failed for {path}: {cause}",
+        "error.integrity": "Files from different builds were detected. Reload after deployment completes.",
+        "error.json": "The JSON could not be read.",
+        "error.size": "The selected file exceeds 20 MB.",
+        "error.notFound": "This entry was not found.",
+        "error.unknown": "The action could not be completed. Your previous draft is unchanged.",
+        "footer.note": "Public knowledge. Flexible by design.",
+        "footer.version": "Genesis v0.4.0",
+        "type.person": "Person",
+        "type.company": "Company",
+        "type.country": "Country",
+        "type.group": "Group",
+        "valueType.text": "Text",
+        "valueType.integer": "Whole number",
+        "valueType.decimal": "Number with decimals",
+        "valueType.boolean": "Yes / No",
+        "valueType.date": "Date",
+        "valueType.single-select": "One choice",
+        "valueType.multi-select": "Multiple choices",
+        "valueType.text-list": "List of text items",
+        "valueType.reference": "Link to an entry",
+        "valueType.reference-list": "Links to entries",
+        "field.name": "Name",
+        "field.middle_name": "Middle Name",
+        "field.last_name": "Last Name",
+        "field.full_name": "Full Name",
+        "field.age": "Age",
+        "field.birth_date": "Birth Date",
+        "field.nationality": "Nationality",
+        "field.current_country": "Current Country",
+        "field.summary": "Summary",
+        "field.colors": "Colors",
+        "field.clothes": "Clothes",
+        "relation.founded": "founded",
+        "relation.member_of": "member of",
+        "relation.works_for": "works for",
+        "relation.subsidiary_of": "subsidiary of",
+        "relation.based_in": "based in",
+        "catalog.count.one": "{count} entry",
+        "catalog.count.other": "{count} entries",
+        "catalog.fieldCount.one": "{count} field",
+        "catalog.fieldCount.other": "{count} fields",
+        "workspace.empty": "Start an empty collection",
+        "workspace.emptyConfirm": "Remove all entries, connections, sources and notes from this draft? Export first to keep a copy.",
+        "workspace.emptied": "Empty public collection created. Types and field definitions are retained.",
+        "error.http": "HTTP {status} while loading {path}. Check the server root and deployment files.",
+        "status.sourceRoot": "This is the source project. Serve the dist directory over HTTP, or open the built application below.",
+        "action.openBuild": "Open built application",
+        "action.done": "Done",
+        "action.open": "Open",
+        "action.search": "Search…",
+        "action.addItem": "Add item",
+        "action.removeItem": "Remove {value}",
+        "nav.settings": "Settings",
+        "nav.architecture": "Architecture",
+        "workspace.eyebrow": "MAKE ROOM FOR WHAT MATTERS",
+        "workspace.deviceSaved": "Workspace changes saved on this device. Public changes are not published until the PR is merged and deployed.",
+        "workspace.customize": "Customize workspace",
+        "workspace.sections": "Sections",
+        "workspace.types": "Collections by type",
+        "workspace.entries": "Entry shortcuts",
+        "workspace.visibility": "Workspace visibility",
+        "workspace.show": "Show",
+        "workspace.hide": "Hide",
+        "workspace.hideAll": "Hide all",
+        "workspace.visibilityHelp": "Show or hide panels in your workspace. This does not delete entries or hide public information. Changes are saved automatically on this device.",
+        "workspace.emptyTitle": "A little space to make your own.",
+        "workspace.emptyHelp": "All optional panels start hidden. Add the sections, types or entries you want to keep nearby.",
+        "workspace.exportLayout": "Export layout",
+        "workspace.importLayout": "Import layout",
+        "workspace.layoutSaved": "Workspace layout updated.",
+        "workspace.layoutHelp": "Layout preferences are separate from collection data. To share a default layout, place the exported visible list in config/workspace.json → defaults, then rebuild.",
+        "workspace.reset": "Use published collection",
+        "workspace.resetConfirm": "Discard your local collection changes and return to the published data? Export a backup first.",
+        "workspace.storageFailed": "Changes are currently held in this tab only. Browser storage may be full, blocked or changed in another tab. Export a backup before closing or reloading. ",
+        "workspace.recovery": "Recover a previous draft",
+        "workspace.recoveryHelp": "A saved draft could not be applied automatically. It may belong to a different deployment. Download it before restoring or clearing it; restore replaces the working collection.",
+        "workspace.recoveryNotice": "A previous local draft needs review in Settings. New changes cannot be saved on this device until it is resolved. ",
+        "workspace.downloadRecovery": "Download saved draft",
+        "workspace.restoreRecovery": "Restore saved collection",
+        "workspace.restoreConfirm": "Replace the working collection with the previous local draft?",
+        "workspace.clearRecovery": "Clear saved draft",
+        "workspace.clearConfirm": "Permanently clear the saved local draft? Export any work you need first.",
+        "editor.editTitle": "Edit Entry",
+        "editor.more": "More options",
+        "editor.fieldSettings": "Field options",
+        "editor.editField": "Edit field",
+        "editor.saveField": "Save field",
+        "editor.reusable": "Save as reusable field",
+        "editor.englishLabel": "The base label is written in English. Interface translations are managed in Languages.",
+        "editor.changeKind": "Changing the field type will clear its current value. Continue?",
+        "editor.fieldAdded": "Field added to this form. Save Entry to keep your changes.",
+        "editor.sharedField": "This field uses a shared definition. Its data type is fixed.",
+        "editor.choose": "Choose an option",
+        "editor.findEntry": "Find an entry…",
+        "editor.listItem": "New item",
+        "editor.discard": "Discard unsaved changes in this form?",
+        "source.new": "New source",
+        "source.edit": "Edit source",
+        "source.save": "Save source",
+        "source.delete": "Delete source",
+        "source.title": "Title",
+        "source.publisher": "Publisher or author",
+        "source.url": "Link (optional)",
+        "source.accessed_on": "Accessed on (optional)",
+        "source.description": "Description",
+        "source.accessed": "Accessed {date}",
+        "source.usedBy": "Used by",
+        "source.usage": "Used in {count} records.",
+        "source.deleteConfirm": "Delete “{title}”?",
+        "source.chooseReplacement": "Choose a replacement (optional)",
+        "source.replace": "Replace references with",
+        "source.unlink": "Remove all references to this source",
+        "error.sourceInUse": "This source is used in {count} records. Choose a replacement or explicitly remove its references.",
+        "settings.general": "General",
+        "settings.types": "Types and fields",
+        "settings.languages": "Languages",
+        "settings.advanced": "Advanced",
+        "settings.advancedHelp": "These tools edit the underlying data. Everyday tasks are available through forms.",
+        "settings.data": "Your data",
+        "settings.tools": "Collection tools",
+        "type.edit": "Configure type",
+        "type.active": "Available for new entries",
+        "type.fields": "Fields shown in New Entry",
+        "type.help": "These are suggestions, not required fields. Each entry may have its own fields. New types receive a permanent internal ID automatically.",
+        "type.enabled": "Available for new entries",
+        "type.disabled": "Unavailable for new entries; existing entries are preserved.",
+        "language.select": "Interface language",
+        "language.title": "Languages",
+        "language.import": "Load language file",
+        "language.create": "New language",
+        "language.code": "Language code",
+        "language.help": "Keep en-US as the base. Import a language file or create a translation. Incomplete languages stay as drafts until all messages and variables are valid.",
+        "language.replaceConfirm": "Replace the existing translation draft for this language? The enabled language stays unchanged until you apply it.",
+        "language.saved": "Translation draft updated.",
+        "language.enabled": "Enabled",
+        "language.draft": "Draft",
+        "language.progress": "{done} of {total} messages filled",
+        "language.invalid": "{count} messages with invalid variables",
+        "language.translate": "Translate manually",
+        "language.export": "Export language",
+        "language.disable": "Disable language",
+        "language.disableConfirm": "Remove this language from the selector? Its translation will remain as a draft.",
+        "language.search": "Find a key or message…",
+        "language.translationHelp": "Edit the translation beside each English source message. Keep every variable exactly as shown. This changes interface text, not entry values.",
+        "language.variables": "Variables: {variables}",
+        "language.noVariables": "none",
+        "language.pending": "Pending or invalid only",
+        "language.saveDraft": "Save translation draft",
+        "language.enable": "Enable / apply language",
+        "language.activated": "Language applied. It is available in the header.",
+        "architecture.eyebrow": "EVOLUTION BY DESIGN",
+        "architecture.intro": "Independent versions let the collection evolve while preserving the identity of its records.",
+        "architecture.note": "The static site reads public JSON files. Local drafts are separate from publication. File hashes detect mixed builds; they do not authenticate the publisher.",
+        "error.options": "Add at least one choice for this field.",
+        "error.translation": "Complete or correct {count} messages before enabling this language.",
+        "error.storageConflict": "Another tab changed the local draft. Export your current work, then reload before saving again.",
+        "layer.application": "Application",
+        "layerHelp.application": "The features and workflows available in this release.",
+        "layer.theme": "Theme",
+        "layerHelp.theme": "The visual identity, spacing and responsive components.",
+        "layer.object": "Entries",
+        "layerHelp.object": "Individual records, their identity and typed fields.",
+        "layer.snapshot": "Collection snapshot",
+        "layerHelp.snapshot": "The portable collection used for backup and import.",
+        "layer.registry": "Types and fields",
+        "layerHelp.registry": "Reusable definitions and connection rules.",
+        "layer.language": "Language catalog",
+        "layerHelp.language": "Interface messages and their named variables.",
+        "layer.index": "Collection index",
+        "layerHelp.index": "Lightweight records for search and lazy loading.",
+        "layer.ui": "Interface contract",
+        "layerHelp.ui": "The structure expected by the interface and theme.",
+        "layer.workspace": "Workspace preferences",
+        "layerHelp.workspace": "Personal visibility, local drafts and translation drafts.",
+        "source.panelHelp": "Create, organize and connect the sources behind your information.",
+        "connections.panelHelp": "Explore the connections between entries.",
+        "language.panelHelp": "Load a language or translate interface messages manually.",
+        "extension.unavailable": "This feature is disabled. Open Plugins to enable it.",
+        "editor.pattern": "Validation pattern (regular expression)",
+        "editor.patternHelp": "Optional. Match the entire value. Examples: [0-9]+ or [A-Za-z]+. Nested groups and lookarounds are not supported.",
+        "error.pattern": "The value at {path} does not match the field pattern.",
+        "error.patternSyntax": "The pattern at {path} is invalid or unsupported.",
+        "kernel.navigation": "Application tools",
+        "kernel.collection": "Collection",
+        "kernel.plugins": "Plugins",
+        "kernel.themes": "Themes",
+        "kernel.pluginHelp": "Enable the capabilities you need. Disabling a plugin keeps its data. Changes take effect after reloading.",
+        "kernel.disableAll": "Disable all plugins",
+        "kernel.disableAllConfirm": "Start with only the core? Your collection and local drafts will be kept.",
+        "kernel.restoreBundle": "Enable bundled plugins",
+        "kernel.exportConfig": "Export project configuration",
+        "kernel.state": "Status",
+        "kernel.active": "Active",
+        "kernel.disabled": "Disabled",
+        "kernel.failed": "Failed",
+        "kernel.blocked": "Blocked",
+        "kernel.details": "Details and dependencies",
+        "kernel.requires": "Requires",
+        "kernel.none": "None",
+        "kernel.permissions": "API capabilities",
+        "kernel.disable": "Disable",
+        "kernel.enable": "Enable",
+        "kernel.updates": "Update sources",
+        "kernel.updateHelp": "Check for updates from your chosen HTTPS registries. This release only reads metadata; installation and publication are manual.",
+        "kernel.core_registry_url": "Core registry URL",
+        "kernel.plugin_registry_url": "Plugin registry URL",
+        "kernel.theme_registry_url": "Theme registry URL",
+        "kernel.perExtension": "Individual update sources",
+        "kernel.saveURLs": "Save update sources",
+        "kernel.checkUpdates": "Check updates",
+        "kernel.checking": "Checking registries…",
+        "kernel.noURL": "Add a registry URL first.",
+        "kernel.available": "Update available",
+        "kernel.current": "No newer releases found",
+        "kernel.compatible": "Compatible with this core API",
+        "kernel.incompatible": "Requires a different core or API version",
+        "kernel.download": "Download package",
+        "kernel.install": "Install a local plugin or theme",
+        "kernel.installHelp": "Extract a trusted package into a folder, run the command in your project, then run npm run build. Exported configuration can replace config/extensions.json to publish your choices.",
+        "kernel.trustHelp": "Plugins run with page privileges. Declared API capabilities are not a security sandbox. Only install code you trust.",
+        "kernel.themeHelp": "Choose a presentation. Entry data and validation stay with plugins.",
+        "kernel.builtinTheme": "Core default",
+        "kernel.builtinHelp": "Minimal presentation, without an installed theme.",
+        "kernel.selected": "Selected",
+        "kernel.useTheme": "Use this theme",
+        "kernel.themeFailure": "Could not load the theme; using the core presentation.",
+        "kernel.diagnostics": "Plugin diagnostics",
+        "kernel.saved": "Saved on this device. Export configuration to include it in the next build.",
+        "kernel.storageUnavailable": "Local storage is unavailable. Enable browser storage to save extension preferences.",
+        "kernel.storageConflict": "Another tab changed these preferences. Reload before saving.",
+        "kernel.recovery": "Stored extension preferences could not be applied. Project defaults were loaded. Export the saved preferences before resetting.",
+        "kernel.exportRecovery": "Export saved preferences",
+        "kernel.resetPreferences": "Reset extension preferences",
+        "kernel.resetConfirm": "Reset only extension preferences? Collection drafts will be kept.",
+        "fieldKey.auto": "Generate automatically",
+        "fieldKey.manual": "Enter manually",
+        "fieldKey.mode": "Field key creation",
+        "fieldKey.key": "Field key",
+        "fieldKey.help": "Stable semantic key, for example field.passport. Internal IDs remain unchanged.",
+        "valueType.image": "Image",
+        "valueType.gallery": "Image gallery",
+        "media.url": "External image URL",
+        "media.upload": "Upload image(s)",
+        "media.alt": "Alternative text / caption",
+        "media.addURL": "Add URL",
+        "media.first": "Move to first",
+        "media.primary": "Primary",
+        "media.cover": "Entry cover field",
+        "media.unavailable": "Image unavailable",
+        "media.https": "Use an HTTPS image URL.",
+        "media.uploadHelp": "PNG, JPEG, WebP or GIF. Up to 10 MiB each, 60 MiB per package. Uploads are stored in the encrypted vault; unlock it first.",
+        "privacy.classification": "Classification",
+        "privacy.inherit": "Inherit entry classification",
+        "privacy.presentation": "Display in details",
+        "privacy.normal": "Visible",
+        "privacy.hidden": "Hidden",
+        "privacy.masked": "Masked",
+        "privacy.visualHelp": "Hidden and masked affect presentation only. Select Private to exclude a value from publication.",
+        "privacy.entryHelp": "Private entries and private fields are excluded from public exports and GitHub. Private data requires an unlocked vault. Existing entries keep their classification.",
+        "privacy.manage": "Classify related data",
+        "vault.title": "Privacy & Vault",
+        "vault.password": "Vault passphrase",
+        "vault.repeat": "Repeat new passphrase",
+        "vault.mismatch": "Passphrases do not match.",
+        "vault.help": "The vault encrypts your full workspace and uploaded images on this device. Use at least 12 characters. Keep an encrypted backup and your passphrase separately; losing both access and the passphrase means losing the private data.",
+        "vault.create": "Create encrypted vault",
+        "vault.unlock": "Unlock vault",
+        "vault.unlocked": "Vault unlocked on this device",
+        "vault.lock": "Lock vault",
+        "vault.backup": "Download encrypted backup",
+        "vault.restore": "Restore encrypted backup (enter its passphrase above)",
+        "vault.restoreConfirm": "Replace the current vault with this encrypted backup?",
+        "vault.changePassword": "Change passphrase",
+        "badges.manage": "Manage badges",
+        "badges.edit": "Edit badge",
+        "badges.emoji": "Emoji",
+        "badges.name": "Badge name",
+        "badges.new": "New badge",
+        "badges.needMedia": "Enable Media to edit image badges. Emoji badges work independently.",
+        "badges.help": "Badges are assigned to types and appear on their entries. Move to first to set their display order.",
+        "settings.plugins": "Plugins",
+        "settings.projectScope": "Project settings — included in public exports and GitHub changes.",
+        "settings.localScope": "Personal settings — saved only in this browser.",
+        "kernel.settings": "Settings",
+        "github.submit": "Submit changes to GitHub",
+        "github.token": "Fine-grained personal access token (session only)",
+        "github.help": "Configure owner, repository and destination in Settings. Grant Contents: Read and write and Pull requests: Read and write for this repository. The token is kept only in memory. A PR saves to a new branch; merge and successful deployment update the site.",
+        "github.connect": "Connect and review changes",
+        "github.disconnect": "Disconnect GitHub",
+        "github.disconnected": "GitHub disconnected.",
+        "github.review": "Review these public file changes before submission.",
+        "github.noChanges": "No changes to submit.",
+        "github.branch": "New branch name",
+        "github.author": "Commit author name",
+        "github.email": "Commit author email",
+        "github.title": "Pull request title",
+        "github.description": "Pull request description",
+        "github.draft": "Create as draft",
+        "github.confirm": "Create pull request",
+        "github.confirmPrompt": "Submit the reviewed changes from {branch} to {base}?",
+        "github.sending": "Creating the commit and pull request…",
+        "github.sent": "Pull request created. Waiting for manual review and merge.",
+        "github.openPR": "Open pull request on GitHub",
+        "vault.locked": "Vault locked — private data is unavailable until you unlock it."
+      }
+    }
+  },
+  "objects": [
+    {
+      "format_version": "1.0.0",
+      "id": "6e60d03f-8b0a-51c5-811c-1590b73e3ebb",
+      "type": "company",
+      "created_at": "2026-10-13T09:00:00Z",
+      "updated_at": "2026-10-13T09:00:00Z",
+      "display_field_id": "legacy_name",
+      "fields": [
+        {
+          "id": "legacy_name",
+          "label": {
+            "en-US": "Name"
+          },
+          "value_type": "text",
+          "value": "Horizonte"
+        },
+        {
+          "id": "legacy_aliases",
+          "label": {
+            "en-US": "Aliases"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_summary",
+          "label": {
+            "en-US": "Summary"
+          },
+          "value_type": "text",
+          "value": "Tecnologia para organizar conhecimento público."
+        },
+        {
+          "id": "legacy_description",
+          "label": {
+            "en-US": "Description"
+          },
+          "value_type": "text",
+          "value": "Tecnologia para organizar conhecimento público. Registro fictício criado exclusivamente para demonstrar a Genesis."
+        },
+        {
+          "id": "legacy_tags",
+          "label": {
+            "en-US": "Tags"
+          },
+          "value_type": "text-list",
+          "value": [
+            "tecnologia",
+            "dados abertos"
+          ]
+        },
+        {
+          "id": "legacy_links",
+          "label": {
+            "en-US": "Links"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_status",
+          "label": {
+            "en-US": "Status"
+          },
+          "value_type": "text",
+          "value": "active"
+        },
+        {
+          "id": "attribute_legal_name",
+          "label": {
+            "en-US": "Legal name"
+          },
+          "value_type": "text",
+          "value": "Horizonte Tecnologia"
+        },
+        {
+          "id": "attribute_headquarters_country_id",
+          "label": {
+            "en-US": "Headquarters country id"
+          },
+          "value_type": "reference",
+          "value": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+          "rules": {
+            "target_types": [
+              "country"
+            ]
+          }
+        },
+        {
+          "id": "attribute_industry",
+          "label": {
+            "en-US": "Industry"
+          },
+          "value_type": "text",
+          "value": "Tecnologia"
+        },
+        {
+          "id": "attribute_founded_on",
+          "label": {
+            "en-US": "Founded on"
+          },
+          "value_type": "text",
+          "value": "2019-03-12"
+        }
+      ],
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "legacy": {
+        "source_version": "0.0.0",
+        "record": {
+          "id": "6e60d03f-8b0a-51c5-811c-1590b73e3ebb",
+          "type": "company",
+          "name": "Horizonte",
+          "aliases": [],
+          "summary": "Tecnologia para organizar conhecimento público.",
+          "description": "Tecnologia para organizar conhecimento público. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+          "tags": [
+            "tecnologia",
+            "dados abertos"
+          ],
+          "links": [],
+          "source_ids": [
+            "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+          ],
+          "status": "active",
+          "created_at": "2026-10-13T09:00:00Z",
+          "updated_at": "2026-10-13T09:00:00Z",
+          "attributes": {
+            "legal_name": "Horizonte Tecnologia",
+            "headquarters_country_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+            "industry": "Tecnologia",
+            "founded_on": "2019-03-12"
+          }
+        }
+      }
+    },
+    {
+      "format_version": "1.0.0",
+      "id": "d4535b5d-b599-54de-9a3b-198dbf8dab8d",
+      "type": "company",
+      "created_at": "2026-10-13T09:00:00Z",
+      "updated_at": "2026-10-13T09:00:00Z",
+      "display_field_id": "legacy_name",
+      "fields": [
+        {
+          "id": "legacy_name",
+          "label": {
+            "en-US": "Name"
+          },
+          "value_type": "text",
+          "value": "Meridiano"
+        },
+        {
+          "id": "legacy_aliases",
+          "label": {
+            "en-US": "Aliases"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_summary",
+          "label": {
+            "en-US": "Summary"
+          },
+          "value_type": "text",
+          "value": "Pesquisa aplicada e desenvolvimento de sistemas."
+        },
+        {
+          "id": "legacy_description",
+          "label": {
+            "en-US": "Description"
+          },
+          "value_type": "text",
+          "value": "Pesquisa aplicada e desenvolvimento de sistemas. Registro fictício criado exclusivamente para demonstrar a Genesis."
+        },
+        {
+          "id": "legacy_tags",
+          "label": {
+            "en-US": "Tags"
+          },
+          "value_type": "text-list",
+          "value": [
+            "pesquisa"
+          ]
+        },
+        {
+          "id": "legacy_links",
+          "label": {
+            "en-US": "Links"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_status",
+          "label": {
+            "en-US": "Status"
+          },
+          "value_type": "text",
+          "value": "active"
+        },
+        {
+          "id": "attribute_legal_name",
+          "label": {
+            "en-US": "Legal name"
+          },
+          "value_type": "text",
+          "value": "Meridiano Sistemas"
+        },
+        {
+          "id": "attribute_headquarters_country_id",
+          "label": {
+            "en-US": "Headquarters country id"
+          },
+          "value_type": "reference",
+          "value": "105a06bd-7757-5964-b40b-438fae68b0c7",
+          "rules": {
+            "target_types": [
+              "country"
+            ]
+          }
+        },
+        {
+          "id": "attribute_industry",
+          "label": {
+            "en-US": "Industry"
+          },
+          "value_type": "text",
+          "value": "Pesquisa"
+        }
+      ],
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "legacy": {
+        "source_version": "0.0.0",
+        "record": {
+          "id": "d4535b5d-b599-54de-9a3b-198dbf8dab8d",
+          "type": "company",
+          "name": "Meridiano",
+          "aliases": [],
+          "summary": "Pesquisa aplicada e desenvolvimento de sistemas.",
+          "description": "Pesquisa aplicada e desenvolvimento de sistemas. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+          "tags": [
+            "pesquisa"
+          ],
+          "links": [],
+          "source_ids": [
+            "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+          ],
+          "status": "active",
+          "created_at": "2026-10-13T09:00:00Z",
+          "updated_at": "2026-10-13T09:00:00Z",
+          "attributes": {
+            "legal_name": "Meridiano Sistemas",
+            "headquarters_country_id": "105a06bd-7757-5964-b40b-438fae68b0c7",
+            "industry": "Pesquisa"
+          }
+        }
+      }
+    },
+    {
+      "format_version": "1.0.0",
+      "id": "105a06bd-7757-5964-b40b-438fae68b0c7",
+      "type": "country",
+      "created_at": "2026-10-13T09:00:00Z",
+      "updated_at": "2026-10-13T09:00:00Z",
+      "display_field_id": "legacy_name",
+      "fields": [
+        {
+          "id": "legacy_name",
+          "label": {
+            "en-US": "Name"
+          },
+          "value_type": "text",
+          "value": "Lúmen"
+        },
+        {
+          "id": "legacy_aliases",
+          "label": {
+            "en-US": "Aliases"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_summary",
+          "label": {
+            "en-US": "Summary"
+          },
+          "value_type": "text",
+          "value": "País fictício para explorar conexões internacionais."
+        },
+        {
+          "id": "legacy_description",
+          "label": {
+            "en-US": "Description"
+          },
+          "value_type": "text",
+          "value": "País fictício para explorar conexões internacionais. Registro fictício criado exclusivamente para demonstrar a Genesis."
+        },
+        {
+          "id": "legacy_tags",
+          "label": {
+            "en-US": "Tags"
+          },
+          "value_type": "text-list",
+          "value": [
+            "demonstração"
+          ]
+        },
+        {
+          "id": "legacy_links",
+          "label": {
+            "en-US": "Links"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_status",
+          "label": {
+            "en-US": "Status"
+          },
+          "value_type": "text",
+          "value": "active"
+        },
+        {
+          "id": "attribute_official_name",
+          "label": {
+            "en-US": "Official name"
+          },
+          "value_type": "text",
+          "value": "República de Lúmen"
+        },
+        {
+          "id": "attribute_capital",
+          "label": {
+            "en-US": "Capital"
+          },
+          "value_type": "text",
+          "value": "Vila Luz"
+        }
+      ],
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "legacy": {
+        "source_version": "0.0.0",
+        "record": {
+          "id": "105a06bd-7757-5964-b40b-438fae68b0c7",
+          "type": "country",
+          "name": "Lúmen",
+          "aliases": [],
+          "summary": "País fictício para explorar conexões internacionais.",
+          "description": "País fictício para explorar conexões internacionais. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+          "tags": [
+            "demonstração"
+          ],
+          "links": [],
+          "source_ids": [
+            "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+          ],
+          "status": "active",
+          "created_at": "2026-10-13T09:00:00Z",
+          "updated_at": "2026-10-13T09:00:00Z",
+          "attributes": {
+            "official_name": "República de Lúmen",
+            "capital": "Vila Luz"
+          }
+        }
+      }
+    },
+    {
+      "format_version": "1.0.0",
+      "id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+      "type": "country",
+      "created_at": "2026-10-13T09:00:00Z",
+      "updated_at": "2026-10-13T09:00:00Z",
+      "display_field_id": "legacy_name",
+      "fields": [
+        {
+          "id": "legacy_name",
+          "label": {
+            "en-US": "Name"
+          },
+          "value_type": "text",
+          "value": "Aurora"
+        },
+        {
+          "id": "legacy_aliases",
+          "label": {
+            "en-US": "Aliases"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_summary",
+          "label": {
+            "en-US": "Summary"
+          },
+          "value_type": "text",
+          "value": "País fictício da base de demonstração."
+        },
+        {
+          "id": "legacy_description",
+          "label": {
+            "en-US": "Description"
+          },
+          "value_type": "text",
+          "value": "País fictício da base de demonstração. Registro fictício criado exclusivamente para demonstrar a Genesis."
+        },
+        {
+          "id": "legacy_tags",
+          "label": {
+            "en-US": "Tags"
+          },
+          "value_type": "text-list",
+          "value": [
+            "demonstração"
+          ]
+        },
+        {
+          "id": "legacy_links",
+          "label": {
+            "en-US": "Links"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_status",
+          "label": {
+            "en-US": "Status"
+          },
+          "value_type": "text",
+          "value": "active"
+        },
+        {
+          "id": "attribute_official_name",
+          "label": {
+            "en-US": "Official name"
+          },
+          "value_type": "text",
+          "value": "República de Aurora"
+        },
+        {
+          "id": "attribute_capital",
+          "label": {
+            "en-US": "Capital"
+          },
+          "value_type": "text",
+          "value": "Porto Claro"
+        },
+        {
+          "id": "attribute_region",
+          "label": {
+            "en-US": "Region"
+          },
+          "value_type": "text",
+          "value": "Região demonstrativa"
+        },
+        {
+          "id": "attribute_languages",
+          "label": {
+            "en-US": "Languages"
+          },
+          "value_type": "text-list",
+          "value": [
+            "Português"
+          ]
+        }
+      ],
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "legacy": {
+        "source_version": "0.0.0",
+        "record": {
+          "id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+          "type": "country",
+          "name": "Aurora",
+          "aliases": [],
+          "summary": "País fictício da base de demonstração.",
+          "description": "País fictício da base de demonstração. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+          "tags": [
+            "demonstração"
+          ],
+          "links": [],
+          "source_ids": [
+            "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+          ],
+          "status": "active",
+          "created_at": "2026-10-13T09:00:00Z",
+          "updated_at": "2026-10-13T09:00:00Z",
+          "attributes": {
+            "official_name": "República de Aurora",
+            "capital": "Porto Claro",
+            "region": "Região demonstrativa",
+            "languages": [
+              "Português"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "format_version": "1.0.0",
+      "id": "5e7eae50-9ac1-58d5-a17e-f9743ec36269",
+      "type": "group",
+      "created_at": "2026-10-13T09:00:00Z",
+      "updated_at": "2026-10-13T09:00:00Z",
+      "display_field_id": "legacy_name",
+      "fields": [
+        {
+          "id": "legacy_name",
+          "label": {
+            "en-US": "Name"
+          },
+          "value_type": "text",
+          "value": "Rede Comum"
+        },
+        {
+          "id": "legacy_aliases",
+          "label": {
+            "en-US": "Aliases"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_summary",
+          "label": {
+            "en-US": "Summary"
+          },
+          "value_type": "text",
+          "value": "Uma associação fictícia dedicada ao conhecimento aberto."
+        },
+        {
+          "id": "legacy_description",
+          "label": {
+            "en-US": "Description"
+          },
+          "value_type": "text",
+          "value": "Uma associação fictícia dedicada ao conhecimento aberto. Registro fictício criado exclusivamente para demonstrar a Genesis."
+        },
+        {
+          "id": "legacy_tags",
+          "label": {
+            "en-US": "Tags"
+          },
+          "value_type": "text-list",
+          "value": [
+            "comunidade",
+            "dados abertos"
+          ]
+        },
+        {
+          "id": "legacy_links",
+          "label": {
+            "en-US": "Links"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_status",
+          "label": {
+            "en-US": "Status"
+          },
+          "value_type": "text",
+          "value": "active"
+        },
+        {
+          "id": "legacy_subtype",
+          "label": {
+            "en-US": "Subtype"
+          },
+          "value_type": "text",
+          "value": "association"
+        },
+        {
+          "id": "attribute_purpose",
+          "label": {
+            "en-US": "Purpose"
+          },
+          "value_type": "text",
+          "value": "Compartilhar conhecimento e práticas de dados abertos."
+        },
+        {
+          "id": "attribute_base_country_id",
+          "label": {
+            "en-US": "Base country id"
+          },
+          "value_type": "reference",
+          "value": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+          "rules": {
+            "target_types": [
+              "country"
+            ]
+          }
+        }
+      ],
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "legacy": {
+        "source_version": "0.0.0",
+        "record": {
+          "id": "5e7eae50-9ac1-58d5-a17e-f9743ec36269",
+          "type": "group",
+          "name": "Rede Comum",
+          "aliases": [],
+          "summary": "Uma associação fictícia dedicada ao conhecimento aberto.",
+          "description": "Uma associação fictícia dedicada ao conhecimento aberto. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+          "tags": [
+            "comunidade",
+            "dados abertos"
+          ],
+          "links": [],
+          "source_ids": [
+            "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+          ],
+          "status": "active",
+          "created_at": "2026-10-13T09:00:00Z",
+          "updated_at": "2026-10-13T09:00:00Z",
+          "attributes": {
+            "purpose": "Compartilhar conhecimento e práticas de dados abertos.",
+            "base_country_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753"
+          },
+          "subtype": "association"
+        }
+      }
+    },
+    {
+      "format_version": "1.0.0",
+      "id": "61f858b0-0440-5ca5-9202-f3cbbe26e025",
+      "type": "group",
+      "created_at": "2026-10-13T09:00:00Z",
+      "updated_at": "2026-10-13T09:00:00Z",
+      "display_field_id": "legacy_name",
+      "fields": [
+        {
+          "id": "legacy_name",
+          "label": {
+            "en-US": "Name"
+          },
+          "value_type": "text",
+          "value": "Aliança Farol"
+        },
+        {
+          "id": "legacy_aliases",
+          "label": {
+            "en-US": "Aliases"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_summary",
+          "label": {
+            "en-US": "Summary"
+          },
+          "value_type": "text",
+          "value": "Cooperação entre organizações de pesquisa."
+        },
+        {
+          "id": "legacy_description",
+          "label": {
+            "en-US": "Description"
+          },
+          "value_type": "text",
+          "value": "Cooperação entre organizações de pesquisa. Registro fictício criado exclusivamente para demonstrar a Genesis."
+        },
+        {
+          "id": "legacy_tags",
+          "label": {
+            "en-US": "Tags"
+          },
+          "value_type": "text-list",
+          "value": [
+            "pesquisa",
+            "cooperação"
+          ]
+        },
+        {
+          "id": "legacy_links",
+          "label": {
+            "en-US": "Links"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_status",
+          "label": {
+            "en-US": "Status"
+          },
+          "value_type": "text",
+          "value": "active"
+        },
+        {
+          "id": "legacy_subtype",
+          "label": {
+            "en-US": "Subtype"
+          },
+          "value_type": "text",
+          "value": "alliance"
+        },
+        {
+          "id": "attribute_purpose",
+          "label": {
+            "en-US": "Purpose"
+          },
+          "value_type": "text",
+          "value": "Cooperação em pesquisa."
+        },
+        {
+          "id": "attribute_base_country_id",
+          "label": {
+            "en-US": "Base country id"
+          },
+          "value_type": "reference",
+          "value": "105a06bd-7757-5964-b40b-438fae68b0c7",
+          "rules": {
+            "target_types": [
+              "country"
+            ]
+          }
+        }
+      ],
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "legacy": {
+        "source_version": "0.0.0",
+        "record": {
+          "id": "61f858b0-0440-5ca5-9202-f3cbbe26e025",
+          "type": "group",
+          "name": "Aliança Farol",
+          "aliases": [],
+          "summary": "Cooperação entre organizações de pesquisa.",
+          "description": "Cooperação entre organizações de pesquisa. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+          "tags": [
+            "pesquisa",
+            "cooperação"
+          ],
+          "links": [],
+          "source_ids": [
+            "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+          ],
+          "status": "active",
+          "created_at": "2026-10-13T09:00:00Z",
+          "updated_at": "2026-10-13T09:00:00Z",
+          "attributes": {
+            "purpose": "Cooperação em pesquisa.",
+            "base_country_id": "105a06bd-7757-5964-b40b-438fae68b0c7"
+          },
+          "subtype": "alliance"
+        }
+      }
+    },
+    {
+      "format_version": "1.0.0",
+      "id": "7052a93a-1e1d-5228-bc18-4b3bdfec756b",
+      "type": "person",
+      "created_at": "2026-10-13T09:00:00Z",
+      "updated_at": "2026-10-13T09:00:00Z",
+      "display_field_id": "legacy_name",
+      "fields": [
+        {
+          "id": "legacy_name",
+          "label": {
+            "en-US": "Name"
+          },
+          "value_type": "text",
+          "value": "Rafael Norte"
+        },
+        {
+          "id": "legacy_aliases",
+          "label": {
+            "en-US": "Aliases"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_summary",
+          "label": {
+            "en-US": "Summary"
+          },
+          "value_type": "text",
+          "value": "Engenheiro de software e participante da Rede Comum."
+        },
+        {
+          "id": "legacy_description",
+          "label": {
+            "en-US": "Description"
+          },
+          "value_type": "text",
+          "value": "Engenheiro de software e participante da Rede Comum. Registro fictício criado exclusivamente para demonstrar a Genesis."
+        },
+        {
+          "id": "legacy_tags",
+          "label": {
+            "en-US": "Tags"
+          },
+          "value_type": "text-list",
+          "value": [
+            "tecnologia"
+          ]
+        },
+        {
+          "id": "legacy_links",
+          "label": {
+            "en-US": "Links"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_status",
+          "label": {
+            "en-US": "Status"
+          },
+          "value_type": "text",
+          "value": "active"
+        },
+        {
+          "id": "attribute_full_name",
+          "label": {
+            "en-US": "Full name"
+          },
+          "value_type": "text",
+          "value": "Rafael Norte"
+        },
+        {
+          "id": "attribute_given_name",
+          "label": {
+            "en-US": "Given name"
+          },
+          "value_type": "text",
+          "value": "Rafael"
+        },
+        {
+          "id": "attribute_family_name",
+          "label": {
+            "en-US": "Family name"
+          },
+          "value_type": "text",
+          "value": "Norte"
+        },
+        {
+          "id": "attribute_nationality_country_ids",
+          "label": {
+            "en-US": "Nationality country ids"
+          },
+          "value_type": "reference-list",
+          "value": [
+            "105a06bd-7757-5964-b40b-438fae68b0c7"
+          ],
+          "rules": {
+            "target_types": [
+              "country"
+            ]
+          }
+        },
+        {
+          "id": "attribute_residence_country_id",
+          "label": {
+            "en-US": "Residence country id"
+          },
+          "value_type": "reference",
+          "value": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+          "rules": {
+            "target_types": [
+              "country"
+            ]
+          }
+        },
+        {
+          "id": "attribute_occupation",
+          "label": {
+            "en-US": "Occupation"
+          },
+          "value_type": "text",
+          "value": "Engenheiro de software"
+        }
+      ],
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "legacy": {
+        "source_version": "0.0.0",
+        "record": {
+          "id": "7052a93a-1e1d-5228-bc18-4b3bdfec756b",
+          "type": "person",
+          "name": "Rafael Norte",
+          "aliases": [],
+          "summary": "Engenheiro de software e participante da Rede Comum.",
+          "description": "Engenheiro de software e participante da Rede Comum. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+          "tags": [
+            "tecnologia"
+          ],
+          "links": [],
+          "source_ids": [
+            "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+          ],
+          "status": "active",
+          "created_at": "2026-10-13T09:00:00Z",
+          "updated_at": "2026-10-13T09:00:00Z",
+          "attributes": {
+            "full_name": "Rafael Norte",
+            "given_name": "Rafael",
+            "family_name": "Norte",
+            "nationality_country_ids": [
+              "105a06bd-7757-5964-b40b-438fae68b0c7"
+            ],
+            "residence_country_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+            "occupation": "Engenheiro de software"
+          }
+        }
+      }
+    },
+    {
+      "format_version": "1.0.0",
+      "id": "7866625c-68c8-519f-b6ed-2a7723484e13",
+      "type": "person",
+      "created_at": "2026-10-13T09:00:00Z",
+      "updated_at": "2026-10-13T09:00:00Z",
+      "display_field_id": "legacy_name",
+      "fields": [
+        {
+          "id": "legacy_name",
+          "label": {
+            "en-US": "Name"
+          },
+          "value_type": "text",
+          "value": "Clara Vale"
+        },
+        {
+          "id": "legacy_aliases",
+          "label": {
+            "en-US": "Aliases"
+          },
+          "value_type": "text-list",
+          "value": [
+            "C. Vale"
+          ]
+        },
+        {
+          "id": "legacy_summary",
+          "label": {
+            "en-US": "Summary"
+          },
+          "value_type": "text",
+          "value": "Pesquisadora de dados abertos e fundadora da Horizonte."
+        },
+        {
+          "id": "legacy_description",
+          "label": {
+            "en-US": "Description"
+          },
+          "value_type": "text",
+          "value": "Pesquisadora de dados abertos e fundadora da Horizonte. Registro fictício criado exclusivamente para demonstrar a Genesis."
+        },
+        {
+          "id": "legacy_tags",
+          "label": {
+            "en-US": "Tags"
+          },
+          "value_type": "text-list",
+          "value": [
+            "dados abertos",
+            "pesquisa"
+          ]
+        },
+        {
+          "id": "legacy_links",
+          "label": {
+            "en-US": "Links"
+          },
+          "value_type": "text-list",
+          "value": []
+        },
+        {
+          "id": "legacy_status",
+          "label": {
+            "en-US": "Status"
+          },
+          "value_type": "text",
+          "value": "active"
+        },
+        {
+          "id": "attribute_full_name",
+          "label": {
+            "en-US": "Full name"
+          },
+          "value_type": "text",
+          "value": "Clara Vale"
+        },
+        {
+          "id": "attribute_given_name",
+          "label": {
+            "en-US": "Given name"
+          },
+          "value_type": "text",
+          "value": "Clara"
+        },
+        {
+          "id": "attribute_family_name",
+          "label": {
+            "en-US": "Family name"
+          },
+          "value_type": "text",
+          "value": "Vale"
+        },
+        {
+          "id": "attribute_birth_year",
+          "label": {
+            "en-US": "Birth year"
+          },
+          "value_type": "integer",
+          "value": 1988
+        },
+        {
+          "id": "attribute_nationality_country_ids",
+          "label": {
+            "en-US": "Nationality country ids"
+          },
+          "value_type": "reference-list",
+          "value": [
+            "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753"
+          ],
+          "rules": {
+            "target_types": [
+              "country"
+            ]
+          }
+        },
+        {
+          "id": "attribute_residence_country_id",
+          "label": {
+            "en-US": "Residence country id"
+          },
+          "value_type": "reference",
+          "value": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+          "rules": {
+            "target_types": [
+              "country"
+            ]
+          }
+        },
+        {
+          "id": "attribute_occupation",
+          "label": {
+            "en-US": "Occupation"
+          },
+          "value_type": "text",
+          "value": "Pesquisadora"
+        }
+      ],
+      "source_ids": [
+        "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+      ],
+      "legacy": {
+        "source_version": "0.0.0",
+        "record": {
+          "id": "7866625c-68c8-519f-b6ed-2a7723484e13",
+          "type": "person",
+          "name": "Clara Vale",
+          "aliases": [
+            "C. Vale"
+          ],
+          "summary": "Pesquisadora de dados abertos e fundadora da Horizonte.",
+          "description": "Pesquisadora de dados abertos e fundadora da Horizonte. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+          "tags": [
+            "dados abertos",
+            "pesquisa"
+          ],
+          "links": [],
+          "source_ids": [
+            "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+          ],
+          "status": "active",
+          "created_at": "2026-10-13T09:00:00Z",
+          "updated_at": "2026-10-13T09:00:00Z",
+          "attributes": {
+            "full_name": "Clara Vale",
+            "given_name": "Clara",
+            "family_name": "Vale",
+            "birth_year": 1988,
+            "nationality_country_ids": [
+              "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753"
+            ],
+            "residence_country_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+            "occupation": "Pesquisadora"
+          }
+        }
+      }
+    }
+  ]
+}
