@@ -1,0 +1,18 @@
+{
+  "manifest_version": "1.0.0",
+  "id": "watchers.sources",
+  "type": "plugin",
+  "name": "Sources",
+  "description": "Create, edit, associate and manage sources.",
+  "version": "0.0.0",
+  "core": ">=0.0.0 <0.1.0",
+  "api": ">=1.0.0 <2.0.0",
+  "entry": "index.mjs",
+  "permissions": [
+    "registry.write"
+  ],
+  "dependencies": {
+    "watchers.objects": ">=0.0.0 <0.1.0"
+  },
+  "update_url": ""
+}

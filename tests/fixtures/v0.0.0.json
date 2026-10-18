@@ -1,0 +1,458 @@
+{
+  "manifest": {
+    "manifest_version": "0.0.0",
+    "schema_version": "0.0.0",
+    "vocabulary_version": "0.0.0",
+    "dataset_revision": "sha256-5309a282c3b2514c3fd3b21a",
+    "dataset_mode": "demo",
+    "files": {
+      "persons": {
+        "path": "data/persons.json",
+        "sha256": "f0e803573469bf62de58129da3881a036a387d21cc8ca74147ccb06a1db3c57e"
+      },
+      "companies": {
+        "path": "data/companies.json",
+        "sha256": "742f3266b9ef6da22a3371c0ff4472d9055ed6a4353896a7752bfffff37196ae"
+      },
+      "countries": {
+        "path": "data/countries.json",
+        "sha256": "87ad76638c4daff820026b6f33a57879adacc0307a2b997f257a743ab95e35d5"
+      },
+      "groups": {
+        "path": "data/groups.json",
+        "sha256": "85ec4a6658602e47678d991ca29d27fbd00ae7f5020821746728060706ee7dac"
+      },
+      "relationships": {
+        "path": "data/relationships.json",
+        "sha256": "1a3a6aa291e650f6dd553f847590ae17c2e64d38fcbe2b86029ab2bc7e3370a3"
+      },
+      "sources": {
+        "path": "data/sources.json",
+        "sha256": "51b4569fd272d2ddb00bde7e053cb6200937a5b5ad649fb55b35b57443578cbf"
+      },
+      "notes": {
+        "path": "data/notes.json",
+        "sha256": "83d0f24c6bc6af243769b77ad6aa4396cf4065d38911f04dddb44e60b5e5539b"
+      },
+      "schema": {
+        "path": "schemas/dataset.schema.json",
+        "sha256": "a56cd94e3f73c04303308559f529140eecdf471bff6b8f1a781e7537fc228596"
+      },
+      "vocabulary": {
+        "path": "data/vocabulary.json",
+        "sha256": "31e979a452de023a61325d35287a4e90165ede105c322df811a837dc9012742a"
+      }
+    }
+  },
+  "persons": {
+    "schema_version": "0.0.0",
+    "records": [
+      {
+        "id": "7866625c-68c8-519f-b6ed-2a7723484e13",
+        "type": "person",
+        "name": "Clara Vale",
+        "aliases": [
+          "C. Vale"
+        ],
+        "summary": "Pesquisadora de dados abertos e fundadora da Horizonte.",
+        "description": "Pesquisadora de dados abertos e fundadora da Horizonte. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+        "tags": [
+          "dados abertos",
+          "pesquisa"
+        ],
+        "links": [],
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "status": "active",
+        "created_at": "2026-10-13T09:00:00Z",
+        "updated_at": "2026-10-13T09:00:00Z",
+        "attributes": {
+          "full_name": "Clara Vale",
+          "given_name": "Clara",
+          "family_name": "Vale",
+          "birth_year": 1988,
+          "nationality_country_ids": [
+            "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753"
+          ],
+          "residence_country_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+          "occupation": "Pesquisadora"
+        }
+      },
+      {
+        "id": "7052a93a-1e1d-5228-bc18-4b3bdfec756b",
+        "type": "person",
+        "name": "Rafael Norte",
+        "aliases": [],
+        "summary": "Engenheiro de software e participante da Rede Comum.",
+        "description": "Engenheiro de software e participante da Rede Comum. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+        "tags": [
+          "tecnologia"
+        ],
+        "links": [],
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "status": "active",
+        "created_at": "2026-10-13T09:00:00Z",
+        "updated_at": "2026-10-13T09:00:00Z",
+        "attributes": {
+          "full_name": "Rafael Norte",
+          "given_name": "Rafael",
+          "family_name": "Norte",
+          "nationality_country_ids": [
+            "105a06bd-7757-5964-b40b-438fae68b0c7"
+          ],
+          "residence_country_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+          "occupation": "Engenheiro de software"
+        }
+      }
+    ],
+    "dataset_revision": "sha256-5309a282c3b2514c3fd3b21a"
+  },
+  "companies": {
+    "schema_version": "0.0.0",
+    "records": [
+      {
+        "id": "6e60d03f-8b0a-51c5-811c-1590b73e3ebb",
+        "type": "company",
+        "name": "Horizonte",
+        "aliases": [],
+        "summary": "Tecnologia para organizar conhecimento público.",
+        "description": "Tecnologia para organizar conhecimento público. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+        "tags": [
+          "tecnologia",
+          "dados abertos"
+        ],
+        "links": [],
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "status": "active",
+        "created_at": "2026-10-13T09:00:00Z",
+        "updated_at": "2026-10-13T09:00:00Z",
+        "attributes": {
+          "legal_name": "Horizonte Tecnologia",
+          "headquarters_country_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+          "industry": "Tecnologia",
+          "founded_on": "2019-03-12"
+        }
+      },
+      {
+        "id": "d4535b5d-b599-54de-9a3b-198dbf8dab8d",
+        "type": "company",
+        "name": "Meridiano",
+        "aliases": [],
+        "summary": "Pesquisa aplicada e desenvolvimento de sistemas.",
+        "description": "Pesquisa aplicada e desenvolvimento de sistemas. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+        "tags": [
+          "pesquisa"
+        ],
+        "links": [],
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "status": "active",
+        "created_at": "2026-10-13T09:00:00Z",
+        "updated_at": "2026-10-13T09:00:00Z",
+        "attributes": {
+          "legal_name": "Meridiano Sistemas",
+          "headquarters_country_id": "105a06bd-7757-5964-b40b-438fae68b0c7",
+          "industry": "Pesquisa"
+        }
+      }
+    ],
+    "dataset_revision": "sha256-5309a282c3b2514c3fd3b21a"
+  },
+  "countries": {
+    "schema_version": "0.0.0",
+    "records": [
+      {
+        "id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+        "type": "country",
+        "name": "Aurora",
+        "aliases": [],
+        "summary": "País fictício da base de demonstração.",
+        "description": "País fictício da base de demonstração. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+        "tags": [
+          "demonstração"
+        ],
+        "links": [],
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "status": "active",
+        "created_at": "2026-10-13T09:00:00Z",
+        "updated_at": "2026-10-13T09:00:00Z",
+        "attributes": {
+          "official_name": "República de Aurora",
+          "capital": "Porto Claro",
+          "region": "Região demonstrativa",
+          "languages": [
+            "Português"
+          ]
+        }
+      },
+      {
+        "id": "105a06bd-7757-5964-b40b-438fae68b0c7",
+        "type": "country",
+        "name": "Lúmen",
+        "aliases": [],
+        "summary": "País fictício para explorar conexões internacionais.",
+        "description": "País fictício para explorar conexões internacionais. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+        "tags": [
+          "demonstração"
+        ],
+        "links": [],
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "status": "active",
+        "created_at": "2026-10-13T09:00:00Z",
+        "updated_at": "2026-10-13T09:00:00Z",
+        "attributes": {
+          "official_name": "República de Lúmen",
+          "capital": "Vila Luz"
+        }
+      }
+    ],
+    "dataset_revision": "sha256-5309a282c3b2514c3fd3b21a"
+  },
+  "groups": {
+    "schema_version": "0.0.0",
+    "records": [
+      {
+        "id": "5e7eae50-9ac1-58d5-a17e-f9743ec36269",
+        "type": "group",
+        "name": "Rede Comum",
+        "aliases": [],
+        "summary": "Uma associação fictícia dedicada ao conhecimento aberto.",
+        "description": "Uma associação fictícia dedicada ao conhecimento aberto. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+        "tags": [
+          "comunidade",
+          "dados abertos"
+        ],
+        "links": [],
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "status": "active",
+        "created_at": "2026-10-13T09:00:00Z",
+        "updated_at": "2026-10-13T09:00:00Z",
+        "attributes": {
+          "purpose": "Compartilhar conhecimento e práticas de dados abertos.",
+          "base_country_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753"
+        },
+        "subtype": "association"
+      },
+      {
+        "id": "61f858b0-0440-5ca5-9202-f3cbbe26e025",
+        "type": "group",
+        "name": "Aliança Farol",
+        "aliases": [],
+        "summary": "Cooperação entre organizações de pesquisa.",
+        "description": "Cooperação entre organizações de pesquisa. Registro fictício criado exclusivamente para demonstrar a Genesis.",
+        "tags": [
+          "pesquisa",
+          "cooperação"
+        ],
+        "links": [],
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "status": "active",
+        "created_at": "2026-10-13T09:00:00Z",
+        "updated_at": "2026-10-13T09:00:00Z",
+        "attributes": {
+          "purpose": "Cooperação em pesquisa.",
+          "base_country_id": "105a06bd-7757-5964-b40b-438fae68b0c7"
+        },
+        "subtype": "alliance"
+      }
+    ],
+    "dataset_revision": "sha256-5309a282c3b2514c3fd3b21a"
+  },
+  "relationships": {
+    "schema_version": "0.0.0",
+    "records": [
+      {
+        "id": "36ff1ee4-070d-5c9b-a483-22ba51ffd6e1",
+        "from_id": "7866625c-68c8-519f-b6ed-2a7723484e13",
+        "relation_type": "founded",
+        "to_id": "6e60d03f-8b0a-51c5-811c-1590b73e3ebb",
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "note": "Relação fictícia de demonstração."
+      },
+      {
+        "id": "3fff7b6b-5c5c-53d4-a99c-3985f5ce9820",
+        "from_id": "7052a93a-1e1d-5228-bc18-4b3bdfec756b",
+        "relation_type": "works_for",
+        "to_id": "6e60d03f-8b0a-51c5-811c-1590b73e3ebb",
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "note": "Relação fictícia de demonstração."
+      },
+      {
+        "id": "3850d2ec-f82b-526c-85f6-808f0394dec0",
+        "from_id": "7866625c-68c8-519f-b6ed-2a7723484e13",
+        "relation_type": "member_of",
+        "to_id": "5e7eae50-9ac1-58d5-a17e-f9743ec36269",
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "note": "Relação fictícia de demonstração."
+      },
+      {
+        "id": "4d80e342-aa9a-50ce-9f0a-29fcd79d4b05",
+        "from_id": "7052a93a-1e1d-5228-bc18-4b3bdfec756b",
+        "relation_type": "member_of",
+        "to_id": "5e7eae50-9ac1-58d5-a17e-f9743ec36269",
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "note": "Relação fictícia de demonstração."
+      },
+      {
+        "id": "96a3625a-8068-5e3e-a429-661b574bc24a",
+        "from_id": "6e60d03f-8b0a-51c5-811c-1590b73e3ebb",
+        "relation_type": "member_of",
+        "to_id": "61f858b0-0440-5ca5-9202-f3cbbe26e025",
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "note": "Relação fictícia de demonstração."
+      },
+      {
+        "id": "f75986c1-5df1-5aaa-ad22-1cd49e46b4b9",
+        "from_id": "d4535b5d-b599-54de-9a3b-198dbf8dab8d",
+        "relation_type": "member_of",
+        "to_id": "61f858b0-0440-5ca5-9202-f3cbbe26e025",
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "note": "Relação fictícia de demonstração."
+      },
+      {
+        "id": "77bfed56-cda2-50ca-946f-dfaf869239eb",
+        "from_id": "6e60d03f-8b0a-51c5-811c-1590b73e3ebb",
+        "relation_type": "based_in",
+        "to_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "note": "Relação fictícia de demonstração."
+      },
+      {
+        "id": "0bf3fcc6-7a85-5e68-bfff-0bdfabdb8403",
+        "from_id": "5e7eae50-9ac1-58d5-a17e-f9743ec36269",
+        "relation_type": "based_in",
+        "to_id": "cd2c7c7e-9a05-5cd1-9ed4-b250adf33753",
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "note": "Relação fictícia de demonstração."
+      }
+    ],
+    "dataset_revision": "sha256-5309a282c3b2514c3fd3b21a"
+  },
+  "sources": {
+    "schema_version": "0.0.0",
+    "records": [
+      {
+        "id": "24c0cbcc-8e4a-5edc-9ab8-50952bce9513",
+        "title": "Caderno de demonstração Genesis",
+        "publisher": "The Watchers",
+        "description": "Material sintético. Não constitui evidência sobre pessoas, empresas ou países reais."
+      }
+    ],
+    "dataset_revision": "sha256-5309a282c3b2514c3fd3b21a"
+  },
+  "notes": {
+    "schema_version": "0.0.0",
+    "records": [
+      {
+        "id": "49a25987-5f6f-5653-86c1-bcb8efc3bd9e",
+        "entity_id": "7866625c-68c8-519f-b6ed-2a7723484e13",
+        "title": "Sobre este registro",
+        "content": "Este perfil demonstra como reunir informações, fontes e conexões em uma entidade. Todos os dados deste exemplo são fictícios.",
+        "source_ids": [
+          "24c0cbcc-8e4a-5edc-9ab8-50952bce9513"
+        ],
+        "observed_at": "2026-10-13",
+        "created_at": "2026-10-13T09:00:00Z"
+      }
+    ],
+    "dataset_revision": "sha256-5309a282c3b2514c3fd3b21a"
+  },
+  "vocabulary": {
+    "vocabulary_version": "0.0.0",
+    "entity_types": [
+      "person",
+      "company",
+      "country",
+      "group"
+    ],
+    "group_subtypes": [
+      "association",
+      "movement",
+      "alliance",
+      "informal_group",
+      "corporate_group"
+    ],
+    "relationships": {
+      "founded": {
+        "label": "fundou",
+        "from_types": [
+          "person"
+        ],
+        "to_types": [
+          "company",
+          "group"
+        ]
+      },
+      "member_of": {
+        "label": "é membro de",
+        "from_types": [
+          "person",
+          "company",
+          "group",
+          "country"
+        ],
+        "to_types": [
+          "group"
+        ]
+      },
+      "works_for": {
+        "label": "trabalha em",
+        "from_types": [
+          "person"
+        ],
+        "to_types": [
+          "company"
+        ]
+      },
+      "subsidiary_of": {
+        "label": "é subsidiária de",
+        "from_types": [
+          "company"
+        ],
+        "to_types": [
+          "company"
+        ]
+      },
+      "based_in": {
+        "label": "tem base em",
+        "from_types": [
+          "company",
+          "group"
+        ],
+        "to_types": [
+          "country"
+        ]
+      }
+    }
+  }
+}

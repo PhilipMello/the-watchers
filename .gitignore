@@ -1,0 +1,29 @@
+# Publish only source, collection data, validation/build tools and GitHub workflow.
+# Everything else remains available in the distribution ZIP.
+/*
+!/.gitignore
+!/.github/
+!/README.md
+!/LICENSE
+!/LICENSE.*
+!/COPYING
+!/package.json
+!/package-lock.json
+!/assets/
+!/config/
+!/core/
+!/data/
+!/lang/
+!/media/
+!/objects/
+!/plugins/
+!/scripts/
+!/tests/
+!/themes/
+
+# Local/generated files, including files inside permitted directories.
+**/node_modules/
+**/__pycache__/
+**/.DS_Store
+**/*.tmp
+**/*.log

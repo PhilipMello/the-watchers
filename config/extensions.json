@@ -1,0 +1,85 @@
+{
+  "format_version": "1.0.0",
+  "api_version": "1.0.0",
+  "theme": "watchers.theme-genesis",
+  "extensions": [
+    {
+      "manifest": "plugins/collection-snapshot/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/objects/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/custom-fields/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/sources/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/relationships/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/workspace/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/types/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/settings/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/language-editor/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/architecture-viewer/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "themes/genesis/extension.json",
+      "enabled": false
+    },
+    {
+      "manifest": "themes/clear/extension.json",
+      "enabled": false
+    },
+    {
+      "manifest": "plugins/privacy-vault/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/media/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/badges/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/github/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/categories/plugin.json",
+      "enabled": true
+    },
+    {
+      "manifest": "plugins/custom-css/plugin.json",
+      "enabled": true
+    }
+  ],
+  "updates": {
+    "core_registry_url": "",
+    "plugin_registry_url": "",
+    "theme_registry_url": "",
+    "overrides": {}
+  }
+}
