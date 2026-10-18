@@ -1,0 +1,33 @@
+{
+  "format_version": "1.0.0",
+  "defaults": {
+    "format_version": "1.0.0",
+    "visible": []
+  },
+  "sections": [
+    {
+      "id": "architecture",
+      "label_key": "nav.architecture",
+      "description_key": "architecture.intro",
+      "route": "architecture"
+    },
+    {
+      "id": "sources",
+      "label_key": "nav.sources",
+      "description_key": "source.panelHelp",
+      "route": "sources"
+    },
+    {
+      "id": "relationships",
+      "label_key": "nav.relationships",
+      "description_key": "connections.panelHelp",
+      "route": "relationships"
+    },
+    {
+      "id": "languages",
+      "label_key": "language.title",
+      "description_key": "language.panelHelp",
+      "route": "settings/languages"
+    }
+  ]
+}

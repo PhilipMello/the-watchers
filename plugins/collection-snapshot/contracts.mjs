@@ -1,0 +1,2 @@
+export const CONTRACTS=Object.freeze({snapshot:'1.0.0',object:'1.0.0',types:'1.0.0',fields:'1.0.0',language:'1.0.0',index:'1.0.0'});
+export function contractFor(path){if(path==='snapshot')return CONTRACTS.snapshot;if(path.startsWith('objects'))return CONTRACTS.object;if(path.startsWith('definitions'))return CONTRACTS.fields;if(path.startsWith('languages'))return CONTRACTS.language;return CONTRACTS.types;}

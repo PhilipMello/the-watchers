@@ -1,0 +1,18 @@
+{
+  "format_version": "1.0.0",
+  "app_version": "0.0.0",
+  "default_locale": "en-US",
+  "locales": [
+    "en-US"
+  ],
+  "theme": "genesis",
+  "contracts": {
+    "object": "1.0.0",
+    "snapshot": "1.0.0",
+    "registry": "1.0.0",
+    "language": "1.0.0",
+    "theme": "1.0.0",
+    "index": "1.0.0",
+    "ui": "1.0.0"
+  }
+}
